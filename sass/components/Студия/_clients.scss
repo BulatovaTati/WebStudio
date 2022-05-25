@@ -26,6 +26,11 @@
 .clients__list {
   margin-right: -30px;
   margin-bottom: -30px;
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
   @media screen and (min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
@@ -34,7 +39,22 @@
 .clients__item {
   margin-right: 30px;
   margin-bottom: 30px;
-
+  // @media screen and (min-width: $desktop) {
+  //   width: 100%;
+  // }
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 90px) / 3);
+  }
+  &:nth-child(3n) {
+    @media screen and (min-width: $tablet) {
+      margin-right: 0;
+    }
+  }
+  &:nth-last-child(-n + 3) {
+    @media screen and (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+  }
   @media screen and (min-width: $mobile) {
     width: calc((100% - 60px) / 2);
   }
@@ -49,22 +69,6 @@
     }
   }
 }
-.clients__item {
-  @media screen and (min-width: $tablet) {
-    width: calc((100% - 90px) / 3);
-  }
-
-  &:nth-child(3n) {
-    @media screen and (min-width: $tablet) {
-      margin-right: 0;
-    }
-  }
-  &:nth-last-child(-n + 3) {
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-    }
-  }
-}
 
 .clients__link {
   transition: border 250ms $timing-function, fill 250ms $timing-function;
@@ -75,16 +79,18 @@
   border-radius: 4px;
   fill: $fill-color-socials;
 
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    height: 92px;
+  }
+
   @media screen and (min-width: $mobile) {
     padding: 12px 52px;
   }
   @media screen and (max-width: 767px) {
     padding: 16px 60px;
   }
-  @media screen and (min-width: $desktop) {
-    width: 170px;
-    height: 92px;
-  }
+
   &:hover,
   &:focus {
     fill: $accent-text-color;

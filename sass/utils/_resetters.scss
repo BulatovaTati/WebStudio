@@ -11,15 +11,16 @@ body {
 
 .container {
   padding: 0px 15px;
-  @media (min-width: 480px) {
-    width: 480px;
+  @include push--auto;
+
+  @media (min-width: $desktop) {
+    min-width: 1200px;
   }
-  @media (min-width: 768px) {
-    width: 768px;
+  @media (min-width: $tablet) {
+    min-width: 768px;
   }
-  @media (min-width: 1200px) {
-    @include push--auto;
-    width: 1200px;
+  @media (min-width: $mobile) {
+    min-width: 480px;
   }
 }
 
@@ -30,24 +31,21 @@ body {
   @include push--zero;
   list-style: none;
 }
-@media screen and (min-width: 480px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
+.section {
+  @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
+
 .hero,
 .features__title,
 .work__title,
