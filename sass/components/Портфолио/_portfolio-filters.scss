@@ -1,15 +1,30 @@
 .portfolio__filters {
   display: flex;
-  justify-content: center;
+
+  @media screen and (min-width: $mobile) {
+    flex-wrap: wrap;
+    justify-content: left;
+  }
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
+    justify-content: center;
   }
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
+    justify-content: center;
   }
-
-  .portfolio__item:not(:last-child) {
+}
+.portfolio__item {
+  &:not(:last-child) {
     margin-right: 8px;
+  }
+  @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
