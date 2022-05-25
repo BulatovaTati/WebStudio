@@ -1,0 +1,70 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $primary-bcg-color;
+
+  &-container {
+    align-items: baseline;
+  }
+}
+.footer__address-container {
+  margin-right: 70px;
+}
+.address {
+  font-style: normal;
+  &__list {
+    margin-top: 20px;
+  }
+}
+.address__list {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.address__link {
+  transition: color 250ms $timing-function;
+  color: $contacts-footer-color;
+  line-height: 1.72;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+
+  &--white {
+    color: $accent-secondary-text-color;
+  }
+}
+// ...................................................footer-socials
+.footer-socials {
+  margin-right: 93px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: inherit;
+    text-transform: uppercase;
+    color: $accent-secondary-text-color;
+  }
+}
+
+.footer-socials__list {
+  .footer-socials__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.footer-socials__link {
+  transition: background-color 250ms $timing-function;
+
+  @include flexible;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: $accent-secondary-text-color;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent-text-color;
+  }
+}

@@ -1,0 +1,250 @@
+.backdrop {
+  @include backdrop;
+
+  background-color: $modal-bcg;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+
+    & .modal {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+}
+
+.modal {
+  @include centering-xy;
+  @include modal;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $timing-function;
+  background-color: $accent-secondary-text-color;
+}
+
+.modal__button--close {
+  @include flexible;
+  @include push--zero;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: $accent-secondary-text-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: box-shadow 250ms $timing-function, background-color 250ms $timing-function,
+    border-color 250ms $timing-function;
+
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    @include shadow-box;
+    fill: $accent-text-color;
+    border-color: $accent-text-color;
+    outline: 0;
+  }
+}
+
+.modal__icon {
+  transition: fill 250ms $timing-function;
+}
+
+// ................................................Form
+.form__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: $primary-text-color;
+}
+
+.form__field {
+  display: block;
+  text-align: left;
+
+  margin-bottom: 10px;
+}
+
+.form__label {
+  font-size: 12px;
+  line-height: 1.66;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.form__input-container {
+  display: block;
+  position: relative;
+
+  &:hover .form__input,
+  &:focus-within .form__input {
+    border-color: $accent-text-color;
+    outline: 0;
+  }
+  &:hover .form__icon,
+  &:focus-within .form__icon {
+    fill: $accent-text-color;
+  }
+}
+
+.form__input {
+  display: inline-block;
+  padding: 12px 16px;
+  padding-left: 42px;
+
+  width: 100%;
+  height: 40px;
+
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color 250ms $timing-function;
+}
+
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  color: $primary-text-color;
+  fill: currentColor;
+
+  transform: translateY(-50%);
+  transition: color 250ms $timing-function, fill 250ms $timing-function;
+}
+
+.form__field--comments {
+  margin-bottom: 20px;
+}
+
+.form__comments {
+  resize: none;
+  padding: 12px 16px;
+
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.form__field {
+  .form__comments:hover,
+  .form__comments:focus-within {
+    border-color: $accent-text-color;
+    outline: 0;
+  }
+}
+
+.form__field {
+  .form__comments::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  .form__comments:hover::placeholder {
+    color: $accent-text-color;
+  }
+}
+
+// ...................................checkbox
+.form-checkbox {
+  @include flexible;
+
+  margin-bottom: 30px;
+}
+
+.form-checkbox__icon-container {
+  position: relative;
+
+  display: block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+
+  cursor: pointer;
+}
+
+.form-checkbox_input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.form-checkbox__icon--check {
+  @include centering-left-0;
+
+  opacity: 0;
+  border-radius: 4px;
+  transform: scale(0.9);
+  transition: opacity 250ms $timing-function, transform 250ms $timing-function;
+
+  .form-checkbox_input:checked + & {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form-checkbox__icon--uncheck {
+  @include centering-left-0;
+  display: block;
+
+  width: 16px;
+  height: 15px;
+
+  border-radius: 4px;
+  border: 2px solid $primary-text-color;
+  transition: border-color 250ms $timing-function, filter 250ms $timing-function;
+
+  .form-checkbox_input:checked ~ & {
+    border-color: $accent-text-color;
+  }
+}
+
+.form-checkbox_input:hover ~ .form-checkbox__icon--uncheck,
+.form-checkbox_input:focus ~ .form-checkbox__icon--uncheck {
+  border-color: $accent-text-color;
+
+  .form-checkbox_input:hover:checked ~ .form-checkbox__icon--uncheck {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.check-policy {
+  line-height: 1.71;
+  cursor: pointer;
+
+  &__link {
+    color: $accent-text-color;
+  }
+}
+
+.form {
+  &__button {
+    @include main-button;
+    padding: 10px 32px;
+    transition: filter 250ms $timing-function, background-color 250ms $timing-function;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:focus {
+      filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+
+      background-color: rgb(21, 142, 242);
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.header {
+  border-bottom: -1px solid $hr-line-color;
+
+  &--hr {
+    border-bottom: 1px solid $hr-line-color;
+  }
+}
+.nav {
+  align-items: center;
+  &__list {
+    margin-left: 93px;
+  }
+}
+.nav__list {
+  .nav__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.nav__list {
+  .nav__link {
+    transition: color 250ms $timing-function;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    color: $primary-text-color;
+
+    &:hover,
+    &:focus {
+      color: $accent-text-color;
+    }
+  }
+}
+.nav__list {
+  .current {
+    position: relative;
+    color: $accent-text-color;
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      display: block;
+      left: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 4px;
+      background-color: $accent-text-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+// ...............................................Contacts
+.contacts {
+  margin-left: auto;
+  .contacts__item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__link {
+  transition: color 250ms $timing-function;
+  @include flexible;
+  white-space: nowrap;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: currentColor;
+
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+    fill: $accent-text-color;
+  }
+}
+.contacts__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  cursor: pointer;
+}

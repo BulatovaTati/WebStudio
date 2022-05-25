@@ -1,0 +1,74 @@
+body {
+  font-family: $primary-font-fam;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  background: $accent-secondary-text-color;
+  color: $secondary-text-color;
+}
+
+.container {
+  width: 1200px;
+
+  @include push--auto;
+  padding: 0px 15px;
+}
+
+.list,
+.position,
+.title,
+.text {
+  @include push--zero;
+  list-style: none;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.hero,
+.features__title,
+.work__title,
+.team,
+.projects,
+.clients {
+  text-align: center;
+}
+
+.logo,
+.contacts__link,
+.link,
+.list {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: none;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+a:focus {
+  outline-color: $accent-text-color;
+}

@@ -1,0 +1,24 @@
+.header__logo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  font-family: $secondary-font-fam;
+  font-weight: 700;
+  font-size: 26px;
+  color: $accent-text-color;
+
+  &--top {
+    color: $text-logo-color;
+  }
+}
+
+.footer__logo {
+  font-family: $secondary-font-fam;
+  font-weight: 700;
+  font-size: 26px;
+  color: $accent-text-color;
+
+  &--down {
+    color: $accent-secondary-text-color;
+  }
+}

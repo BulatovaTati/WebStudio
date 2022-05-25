@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header header--hr">
+      <div class="container flex">
+        <nav class="nav flex">
+          <!-- Логотип сайту -->
+          <a class="header__logo logo" href="">Web<span class="header__logo--top">Studio</span></a>
+          <!-- Навігація на інші сторінки сайту -->
+          <ul class="nav__list list flex">
+            <li class="nav__item">
+              <a class="nav__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link current" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- Контакти -->
+        <ul class="contacts list flex">
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="contacts__section section">
+        <div class="container flex conteiner--everly">
+          <form class="form__contacts" autocomplete="off">
+            <p class="form__title title">Быстрая форма</p>
+
+            <label class="form__label--label">
+              <span class="form__text">Имя</span>
+              <input class="form__input--input" type="text" />
+            </label>
+            <label class="form__label--label">
+              <span class="form__text">Телефон</span>
+              <input class="form__input--input" type="text" />
+            </label>
+
+            <div class="subscribe__submit">
+              <button class="subscribe__button" type="submit">
+                Подписаться
+                <svg class="subscribe__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="contacts__container">
+            <h2 class="contacts__title title">Контактная информация</h2>
+            <ul class="contacts list flex contacts--center">
+              <li class="contacts__item">
+                <a class="contacts__link" href="mailto:info@devstudio.com">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a class="contacts__link" href="tel:+380961111111">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

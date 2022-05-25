@@ -1,0 +1,29 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/resetters';
+
+@import './components/Общее/logo';
+
+@import './components/Общее/header';
+
+@import './components/Студия/hero';
+
+@import './components/Студия/modal';
+
+@import './components/Студия/features';
+
+@import './components/Студия/work';
+
+@import './components/Студия/team';
+
+@import './components/Студия/clients';
+
+@import './components/Общее/footer';
+
+@import './components/Общее/footer-form';
+
+@import './components/Портфолио/portfolio-filters';
+
+@import './components/Портфолио/portfolio';
+
+@import './components/Контакты/contacts';
