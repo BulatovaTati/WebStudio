@@ -12,15 +12,15 @@
   }
 }
 .clients__list {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
   .clients__item:not(:last-child) {
     @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }
-  }
-}
-.clients__list--flex {
-  @media screen and (min-width: $desktop) {
-    display: flex;
   }
 }
 .clients__list {
