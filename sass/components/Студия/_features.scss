@@ -10,23 +10,32 @@
   @media screen and(min-width: 480px) {
     text-align: center;
   }
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 .features__list-text {
-  // width: 270px;
   line-height: 1.72;
   color: currentColor;
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  }
 }
-// .features__list--flex {
-//   display: flex;
-// }
+.features__list--flex {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
 @media screen and(min-width: 480px) {
   .features__list .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
-// .features__list .features__item:not(:last-child) {
-//   margin-right: 30px;
-// }
+.features__list .features__item:not(:last-child) {
+  @media screen and (min-width: $desktop) {
+    margin-right: 30px;
+  }
+}
 .features__icon--container {
   margin-bottom: 30px;
 

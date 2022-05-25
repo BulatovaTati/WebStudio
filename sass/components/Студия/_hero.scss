@@ -1,23 +1,23 @@
 .hero {
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
   @include push--auto;
 }
 .hero--overlay {
-  // max-width: 1600px;
-  // height: 600px;
-
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/bcg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   background-color: $primary-bcg-color;
-  // background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  //   url(../images/hero/bcg.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
 }
 .hero__title {
-  // margin: 0 auto 30px;
-
-  // width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -25,6 +25,11 @@
 
   color: $accent-secondary-text-color;
   text-transform: uppercase;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0 auto 30px;
+    width: 696px;
+  }
 }
 .hero .button {
   @include main-button;
