@@ -1,8 +1,11 @@
 .portfolio__filters {
   display: flex;
+  justify-content: center;
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
-    justify-content: center;
+  }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
   }
 
   .portfolio__item:not(:last-child) {

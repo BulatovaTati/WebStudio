@@ -1124,13 +1124,18 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .portfolio__filters {
     margin-bottom: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__filters {
+    margin-bottom: 30px;
   }
 }
 .portfolio__filters .portfolio__item:not(:last-child) {
