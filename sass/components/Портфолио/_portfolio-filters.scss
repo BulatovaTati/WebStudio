@@ -6,6 +6,9 @@
     margin-right: 8px;
   }
 }
+.portfolio--flex {
+  display: flex;
+}
 .portfolio__button {
   transition: background-color 250ms $timing-function, color 250ms $timing-function,
     box-shadow 250ms $timing-function, filter 250ms $timing-function;

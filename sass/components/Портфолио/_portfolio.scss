@@ -6,6 +6,9 @@
 .card-set-list {
   flex-wrap: wrap;
 }
+.card-set--flex {
+  display: flex;
+}
 .card-set__content {
   padding: 20px 24px;
   border: 1px solid $other-bcg-color;

@@ -1,7 +1,8 @@
 .work {
-  padding-top: 0;
+  display: none;
+  // padding-top: 0;
   &__title {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -18,12 +19,15 @@
     }
   }
 }
+.work-list--flex {
+  display: flex;
+}
 .work-list__img-description {
   position: absolute;
   left: 0;
   bottom: 0;
 
-  @include flexible;
+  // @include flexible;
 
   margin: 0;
   width: 100%;

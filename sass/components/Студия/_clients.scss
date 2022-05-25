@@ -1,24 +1,27 @@
 .clients {
   &__title {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     color: $primary-text-color;
   }
 }
-.clients__list {
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
+// .clients__list {
+//   .clients__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// }
+// .clients__list--flex {
+//   display: flex;
+// }
 .clients__link {
   transition: border 250ms $timing-function, fill 250ms $timing-function;
 
-  @include flexible;
+  // @include flexible;
 
-  width: 170px;
-  height: 92px;
+  // width: 170px;
+  // height: 92px;
   border: 1px solid $fill-color-socials;
   border-radius: 4px;
   fill: $fill-color-socials;

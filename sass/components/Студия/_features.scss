@@ -8,11 +8,14 @@
   line-height: 1.72;
   color: currentColor;
 }
-.features__list .features__item:not(:last-child) {
-  margin-right: 30px;
-}
+// .features__list--flex {
+//   display: flex;
+// }
+// .features__list .features__item:not(:last-child) {
+//   margin-right: 30px;
+// }
 .features__list-title {
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
 
   font-size: 14px;
   font-weight: 700;
@@ -21,9 +24,9 @@
   text-transform: uppercase;
 }
 .features__icon--container {
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
-  @include flexible;
+  // @include flexible;
 
   background-color: $secondary-bcg-color;
   border-radius: 4px;
