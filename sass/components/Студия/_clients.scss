@@ -55,12 +55,12 @@
   }
 
   &:nth-child(3n) {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) {
       margin-right: 0;
     }
   }
   &:nth-last-child(-n + 3) {
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) {
       margin-bottom: 0;
     }
   }
@@ -70,16 +70,21 @@
   transition: border 250ms $timing-function, fill 250ms $timing-function;
 
   @include flexible;
+
   border: 1px solid $fill-color-socials;
   border-radius: 4px;
   fill: $fill-color-socials;
+
   @media screen and (min-width: $mobile) {
     padding: 12px 52px;
   }
   @media screen and (max-width: 767px) {
     padding: 16px 60px;
   }
-
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+    height: 92px;
+  }
   &:hover,
   &:focus {
     fill: $accent-text-color;
