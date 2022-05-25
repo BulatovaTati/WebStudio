@@ -12,6 +12,7 @@ body {
 .container {
   padding: 0px 15px;
   @include push--auto;
+
   @media screen and (min-width: $mobile) {
     width: 480px;
   }
@@ -30,6 +31,7 @@ body {
   @include push--zero;
   list-style: none;
 }
+
 .section {
   @media screen and (min-width: $mobile) {
     padding-top: 60px;
@@ -38,11 +40,10 @@ body {
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @media screen and (min-width: $desktop) {
-      padding-top: 94px;
-      padding-bottom: 94px;
-    }
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
