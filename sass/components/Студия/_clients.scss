@@ -19,11 +19,11 @@
 //   display: flex;
 // }
 .clients__list {
+  margin-right: -30px;
+  margin-bottom: -30px;
   @media screen and (min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 .clients__item {
@@ -43,6 +43,8 @@
       margin-bottom: 0;
     }
   }
+}
+.clients__item {
   @media screen and (min-width: $tablet) {
     width: calc((100% - 90px) / 3);
   }
@@ -66,8 +68,11 @@
   border: 1px solid $fill-color-socials;
   border-radius: 4px;
   fill: $fill-color-socials;
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: $mobile) {
     padding: 12px 52px;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 16px 60px;
   }
 
   &:hover,
