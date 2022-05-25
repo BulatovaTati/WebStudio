@@ -6,11 +6,18 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 .card-set__content {
-  padding: 20px 24px;
   border: 1px solid $other-bcg-color;
   border-top: none;
+  @media screen and (min-width: $tablet) {
+    padding: 20px 24px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 20px 24px;
+  }
 }
 .card-set__title {
   margin-bottom: 4px;
@@ -28,6 +35,26 @@
   color: $secondary-text-color;
 }
 .card-set__item {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    &:nth-child(2n) {
+      @media screen and (max-width: 1199px) {
+        margin-right: 0;
+      }
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    &:nth-last-child(-n + 2) {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   @media screen and (min-width: $desktop) {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
