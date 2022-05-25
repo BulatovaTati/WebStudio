@@ -3,11 +3,9 @@
   font-size: 36px;
   color: $primary-text-color;
 }
-.card-set-list {
-  flex-wrap: wrap;
-}
-.card-set--flex {
+.card-set {
   display: flex;
+  flex-wrap: wrap;
 }
 .card-set__content {
   padding: 20px 24px;
@@ -30,16 +28,18 @@
   color: $secondary-text-color;
 }
 .card-set__item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
-  }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 }
 

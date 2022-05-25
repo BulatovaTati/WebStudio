@@ -1,14 +1,15 @@
 .portfolio__filters {
-  margin-bottom: 50px;
-  justify-content: center;
+  display: flex;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 
   .portfolio__item:not(:last-child) {
     margin-right: 8px;
   }
 }
-.portfolio--flex {
-  display: flex;
-}
+
 .portfolio__button {
   transition: background-color 250ms $timing-function, color 250ms $timing-function,
     box-shadow 250ms $timing-function, filter 250ms $timing-function;
