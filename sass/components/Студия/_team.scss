@@ -106,7 +106,9 @@
   }
 }
 .team__list {
-  display: flex;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 .team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -115,12 +117,16 @@
   background-color: $accent-secondary-text-color;
 
   &:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
   }
 }
 .team__container {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 .team__name {
   margin-bottom: 10px;
