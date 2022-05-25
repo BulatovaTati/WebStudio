@@ -1,24 +1,28 @@
-  // Text color
+// Text color
 $primary-text-color: #212121;
-  $secondary-text-color: #757575;
-  $accent-text-color: #2196f3;
-  $accent-secondary-text-color: #ffffff;
-  $text-logo-color: #000000;
-  $contacts-footer-color: rgba(255, 255, 255, 0.6);
-  $form-comment: rgba(117, 117, 117, 0.5);
-  // BCG COLOR
-  $primary-bcg-color: #2f303a;
-  $secondary-bcg-color: #f5f4fa;
-  $other-bcg-color: #eeeeee;
-  $hero-bcg-color: #c4c4c4;
-  $bcg-work-title: rgba(47, 48, 58, 0.8);
-  $hr-line-color: #ececec;
-  $fill-color-socials: #afb1b8;
-  $overlay-portfolio-bcg: rgba(33, 150, 243, 0.9);
-  // Font
-  $primary-font-fam: 'Roboto', sans-serif;
-  $secondary-font-fam: 'Raleway', sans-serif;
-  // Modal
-  $modal-bcg: rgba(0, 0, 0, 0.2);
-  // Animation
-  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$secondary-text-color: #757575;
+$accent-text-color: #2196f3;
+$accent-secondary-text-color: #ffffff;
+$text-logo-color: #000000;
+$contacts-footer-color: rgba(255, 255, 255, 0.6);
+$form-comment: rgba(117, 117, 117, 0.5);
+// BCG COLOR
+$primary-bcg-color: #2f303a;
+$secondary-bcg-color: #f5f4fa;
+$other-bcg-color: #eeeeee;
+$hero-bcg-color: #c4c4c4;
+$bcg-work-title: rgba(47, 48, 58, 0.8);
+$hr-line-color: #ececec;
+$fill-color-socials: #afb1b8;
+$overlay-portfolio-bcg: rgba(33, 150, 243, 0.9);
+// Font
+$primary-font-fam: 'Roboto', sans-serif;
+$secondary-font-fam: 'Raleway', sans-serif;
+// Modal
+$modal-bcg: rgba(0, 0, 0, 0.2);
+// Animation
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// Adaptive
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
