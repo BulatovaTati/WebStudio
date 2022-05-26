@@ -39,30 +39,36 @@
     display: flex;
     flex-wrap: nowrap;
     margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 .features__item {
   @media screen and(min-width: $mobile) {
     &:not(:last-child) {
-      margin-bottom: 30px;
+      @media screen and(max-width: 767px) {
+        margin-bottom: 30px;
+      }
     }
   }
   @media screen and(min-width: $tablet) {
     width: calc((100% - 30px) / 2);
-    margin-right: 30px;
-    margin-bottom: 30px;
+    @media screen and(max-width: 1199px) {
+      margin-right: 30px;
+      margin-bottom: 30px;
+    }
 
     &:nth-child(2n) {
-      margin-right: 0;
+      @media screen and(max-width: 1199px) {
+        margin-right: 0;
+      }
     }
 
     &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+      @media screen and(max-width: 1199px) {
+        margin-bottom: 0;
+      }
     }
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 0;
     &:not(:last-child) {
       margin-right: 30px;
     }
