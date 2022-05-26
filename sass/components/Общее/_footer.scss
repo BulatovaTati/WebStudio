@@ -1,35 +1,59 @@
 .footer {
   background-color: $primary-bcg-color;
-  @media screen and (min-width: $desktop) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
-  &-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  @media screen and (min-width: $tablet) {
+    display: flex;
     align-items: baseline;
   }
-}
-.footer-container--flex {
   @media screen and (min-width: $desktop) {
+    align-items: baseline;
+    display: flex;
+  }
+}
+
+.footer__flex--container {
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
     display: flex;
   }
 }
 .footer__address-container {
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    margin-left: 61px;
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
+    text-align: left;
+    margin-left: 0;
   }
 }
 .address {
   font-style: normal;
   &__list {
-    @media screen and (min-width: $desktop) {
-      margin-top: 20px;
-    }
+    margin-top: 20px;
   }
 }
+
 .address__list {
-  .address__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
       margin-bottom: 9px;
     }
   }
@@ -50,39 +74,42 @@
 }
 // ...................................................footer-socials
 .footer-socials {
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: 74px;
+    text-align: center;
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
+    text-align: left;
   }
 
   &__title {
-    @media screen and (min-width: $desktop) {
-      margin-bottom: 20px;
-    }
+    margin-bottom: 20px;
+
     font-size: inherit;
     text-transform: uppercase;
     color: $accent-secondary-text-color;
   }
 }
-.footer-socials--flex {
+
+.footer-socials__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
-}
-.footer-socials__list {
   .footer-socials__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
-      margin-right: 10px;
-    }
+    margin-right: 10px;
   }
 }
 .footer-socials__link {
   transition: background-color 250ms $timing-function;
-  @media screen and (min-width: $desktop) {
-    @include flexible;
+  @include flexible;
 
-    width: 44px;
-    height: 44px;
-  }
+  width: 44px;
+  height: 44px;
 
   border-radius: 50%;
   fill: $accent-secondary-text-color;
