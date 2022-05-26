@@ -4,28 +4,43 @@
   @media screen and (min-width: $mobile) {
     flex-wrap: wrap;
     justify-content: left;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
-    justify-content: center;
+    margin-bottom: 40px;
   }
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
     justify-content: center;
   }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
 }
 .portfolio__item {
   &:not(:last-child) {
-    margin-right: 8px;
-  }
-  @media screen and (min-width: $mobile) {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: $mobile) {
       margin-bottom: 15px;
+      margin-right: 8px;
       &:nth-last-child(-n + 2) {
         margin-bottom: 0;
       }
     }
+    @media screen and (min-width: $tablet) {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-right: 8px;
+      margin-bottom: 0;
+    }
   }
+  // @media screen and (min-width: $mobile) {
+  //   @media screen and (max-width: 767px) {
+  //     margin-bottom: 15px;
+  //     &:nth-last-child(-n + 2) {
+  //       margin-bottom: 0;
+  //     }
+  //   }
+  // }
 }
 
 .portfolio__button {
