@@ -20,9 +20,7 @@
 .features__list-text {
   line-height: 1.72;
   color: currentColor;
-  // @media screen and(min-width: $tablet) {
-  //   width: 354px;
-  // }
+
   @media screen and (min-width: $desktop) {
     width: 270px;
   }
@@ -37,14 +35,24 @@
   }
 }
 .features__item {
+  margin-right: -30px;
+  margin-bottom: -30px;
   @media screen and(min-width: $mobile) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
   @media screen and(min-width: $tablet) {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
+
     margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 }
 // @media screen and(min-width: $mobile) {
