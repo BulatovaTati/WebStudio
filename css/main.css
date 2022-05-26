@@ -1426,14 +1426,9 @@ a:focus {
   color: #757575;
 }
 
-@media screen and (min-width: 480px) {
-  .card-set__item {
+@media screen and (max-width: 767px) {
+  .card-set__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .card-set__item:last-child {
-    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1477,6 +1472,25 @@ a:focus {
 .card-set__link:hover, .card-set__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 480px) {
+  .card-set__img {
+    width: 450px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .card-set__img {
+    width: 354px;
+    height: 294px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-set__img {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .card-set__overlay-box {
