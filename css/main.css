@@ -130,6 +130,13 @@ a:focus {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (min-width: 768px) {
+  .container-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container-flex {
     display: -webkit-box;
@@ -143,12 +150,24 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav__list {
     margin-left: 93px;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav--flex {
     display: -webkit-box;
@@ -180,6 +199,13 @@ a:focus {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__list--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .nav__list--flex {
     display: -webkit-box;
@@ -207,9 +233,16 @@ a:focus {
 .contacts {
   margin-left: auto;
 }
+
+@media screen and (min-width: 768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .contacts .contacts__item:not(:last-child) {
+  .contacts__item:not(:last-child) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 

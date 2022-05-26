@@ -6,12 +6,20 @@
   }
 }
 .container-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
 }
 .nav {
   align-items: center;
+  @media screen and (min-width: $tablet) {
+    &__list {
+      margin-left: 88px;
+    }
+  }
   @media screen and (min-width: $desktop) {
     &__list {
       margin-left: 93px;
@@ -20,6 +28,9 @@
 }
 
 .nav--flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -53,6 +64,9 @@
   }
 }
 .nav__list--flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -81,9 +95,17 @@
 // ...............................................Contacts
 .contacts {
   margin-left: auto;
-  .contacts__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
+}
+.contacts__item {
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
       margin-right: 50px;
+      margin-bottom: 0;
     }
   }
 }
