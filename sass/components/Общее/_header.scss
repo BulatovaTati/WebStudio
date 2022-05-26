@@ -1,10 +1,12 @@
-.header {
-  border-bottom: -1px solid $hr-line-color;
-
-  &--hr {
+.header--hr {
+  @media screen and (min-width: $tablet) {
+    border-bottom: 1px solid $hr-line-color;
+  }
+  @media screen and (min-width: $desktop) {
     border-bottom: 1px solid $hr-line-color;
   }
 }
+
 .container-flex {
   @media screen and (min-width: $tablet) {
     display: flex;
