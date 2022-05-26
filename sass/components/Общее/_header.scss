@@ -35,34 +35,38 @@
     display: flex;
   }
 }
-.nav__list {
-  .nav__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
+.nav__item {
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
       margin-right: 50px;
     }
   }
 }
-.nav__list {
-  .nav__link {
-    transition: color 250ms $timing-function;
+.nav__link {
+  transition: color 250ms $timing-function;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  @media screen and (min-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
-    // padding-top: 32px;
-    // padding-bottom: 32px;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-
-    color: $primary-text-color;
-    @media screen and (min-width: $desktop) {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-
-    &:hover,
-    &:focus {
-      color: $accent-text-color;
-    }
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
   }
 }
+
 .nav__list--flex {
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -95,6 +99,13 @@
 // ...............................................Contacts
 .contacts {
   margin-left: auto;
+  @media screen and (min-width: $tablet) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 0;
+  }
 }
 .contacts__item {
   @media screen and (min-width: $tablet) {
@@ -120,8 +131,13 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   color: currentColor;
-
+  @media screen and (min-width: $tablet) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
   @media screen and (min-width: $desktop) {
+    font-size: inherit;
+    line-height: inherit;
     @include flexible;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -136,7 +152,28 @@
 .contacts__icon {
   fill: currentColor;
   cursor: pointer;
+}
+.icon-mail {
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+    width: 14px;
+    height: 10px;
+  }
   @media screen and (min-width: $desktop) {
     margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
+.icon-tel {
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+    width: 12px;
+    height: 16px;
   }
 }
