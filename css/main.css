@@ -1382,6 +1382,11 @@ a:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 480px) {
+  .card-set {
+    margin-bottom: -30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .card-set {
     margin-right: -30px;
@@ -1390,8 +1395,8 @@ a:focus {
 }
 @media screen and (min-width: 1200px) {
   .card-set {
-    margin-right: 0;
-    margin-bottom: 0;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -1426,24 +1431,22 @@ a:focus {
   color: #757575;
 }
 
-@media screen and (max-width: 767px) {
-  .card-set__item:not(:last-child) {
-    margin-bottom: 30px;
+.card-set__item {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .card-set__item:last-child {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set__item:nth-child(2n) {
     margin-right: 0;
   }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card-set__item:nth-last-child(-n+2) {
     margin-bottom: 0;
   }
@@ -1452,7 +1455,6 @@ a:focus {
   .card-set__item {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
   .card-set__item:nth-child(3n) {
     margin-right: 0;
