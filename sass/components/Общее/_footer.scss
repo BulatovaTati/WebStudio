@@ -23,7 +23,7 @@
   }
 }
 .footer__address-container {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
   }
   @media screen and (min-width: $tablet) {
@@ -44,6 +44,9 @@
 }
 
 .address__list {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: $tablet) {
     margin-bottom: 60px;
   }
@@ -78,8 +81,9 @@
 }
 // ...................................................footer-socials
 .footer-socials {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: $tablet) {
     text-align: center;
@@ -100,7 +104,7 @@
 }
 
 .footer-socials__list {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767.98px) {
     display: flex;
     justify-content: center;
   }
