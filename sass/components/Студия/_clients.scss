@@ -1,3 +1,77 @@
+.clients {
+  &__title {
+    font-weight: 700;
+    color: $primary-text-color;
+
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 50px;
+      font-size: 36px;
+      line-height: 1.16;
+    }
+  }
+}
+.clients__list {
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
+}
+.clients__item {
+  @media screen and (max-width: 767.98px) {
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    @media screen and (min-width: $desktop) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.clients__link {
+  transition: border 250ms $timing-function, fill 250ms $timing-function;
+  @include flexible;
+  border: 1px solid $fill-color-socials;
+  border-radius: 4px;
+  fill: $fill-color-socials;
+  height: 92px;
+  @media screen and (max-width: 767.98px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 1199.98px) {
+    width: 100%;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 170px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+    border: 1px solid $accent-text-color;
+  }
+}
+
 // .clients {
 //   height: 100%;
 //   &__title {
@@ -97,39 +171,3 @@
 //     border: 1px solid $accent-text-color;
 //   }
 // }
-.clients {
-  &__title {
-    margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    color: $primary-text-color;
-  }
-}
-.clients__list {
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-  .clients__item:not(:last-child) {
-    @media screen and (min-width: $desktop) {
-      margin-right: 30px;
-    }
-  }
-}
-.clients__link {
-  transition: border 250ms $timing-function, fill 250ms $timing-function;
-
-  @include flexible;
-
-  width: 170px;
-  height: 92px;
-  border: 1px solid $fill-color-socials;
-  border-radius: 4px;
-  fill: $fill-color-socials;
-
-  &:hover,
-  &:focus {
-    fill: $accent-text-color;
-    border: 1px solid $accent-text-color;
-  }
-}
