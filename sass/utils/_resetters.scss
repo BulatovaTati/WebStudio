@@ -15,7 +15,6 @@ body {
   @media screen and (max-width: 479.98px) {
     width: 100%;
   }
-
   @media screen and (min-width: $mobile) {
     width: 480px;
   }
@@ -36,6 +35,10 @@ body {
 }
 
 .section {
+  @media screen and (max-width: 479.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   @media screen and (min-width: $mobile) {
     padding-top: 60px;
     padding-bottom: 60px;

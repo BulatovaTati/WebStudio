@@ -43,6 +43,12 @@ body {
   list-style: none;
 }
 
+@media screen and (max-width: 479.98px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) {
   .section {
     padding-top: 60px;
@@ -772,7 +778,7 @@ a:focus {
   color: #212121;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.98px) {
   .features__list-title {
     text-align: center;
   }
@@ -955,15 +961,27 @@ a:focus {
   border-radius: 0px 0px 8px 8px;
   background-color: #ffffff;
 }
+@media screen and (max-width: 767.98px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team__item:not(:last-child) {
     margin-right: 30px;
   }
 }
 
+.team__container {
+  padding-top: 30px;
+}
+@media screen and (max-width: 1199.98px) {
+  .team__container {
+    padding-bottom: 24px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team__container {
-    padding-top: 30px;
     padding-bottom: 30px;
   }
 }

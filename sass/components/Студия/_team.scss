@@ -21,14 +21,20 @@
   background-color: $accent-secondary-text-color;
 
   &:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 30px;
+    }
     @media screen and (min-width: $desktop) {
       margin-right: 30px;
     }
   }
 }
 .team__container {
+  padding-top: 30px;
+  @media screen and (max-width: 1199.98px) {
+    padding-bottom: 24px;
+  }
   @media screen and (min-width: $desktop) {
-    padding-top: 30px;
     padding-bottom: 30px;
   }
 }
