@@ -4,17 +4,18 @@
   color: $primary-text-color;
 }
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-
   @media screen and (min-width: $mobile) {
     margin-bottom: -30px;
   }
   @media screen and (min-width: $tablet) {
     margin-right: -30px;
     margin-bottom: -30px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
   }
@@ -57,6 +58,9 @@
     width: calc((100% - 60px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
+    @media screen and (max-width: 1199.98px) {
+      flex-grow: 1;
+    }
 
     &:nth-child(2n) {
       @media screen and (max-width: 1199.98px) {
@@ -64,7 +68,9 @@
       }
     }
     &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
+      @media screen and (max-width: 1199.98px) {
+        margin-bottom: 0;
+      }
     }
   }
   @media screen and (min-width: $desktop) {
@@ -84,6 +90,14 @@
   display: inline-block;
   transition: box-shadow 250ms $timing-function;
 
+  @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199.98px) {
+      height: 100%;
+      width: 100%;
+      flex-grow: 1;
+    }
+  }
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -92,12 +106,12 @@
 }
 .card-set__img {
   @media screen and (min-width: $mobile) {
-    width: 450px;
-    height: 294px;
+    // width: 450px;
+    // height: 294px;
   }
   @media screen and (min-width: $tablet) {
-    width: 354px;
-    height: 294px;
+    // width: 354px;
+    // height: 294px;
   }
   @media screen and (min-width: $desktop) {
     width: 370px;

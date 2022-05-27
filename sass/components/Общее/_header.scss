@@ -1,9 +1,20 @@
-.header--hr {
-  @media screen and (min-width: $tablet) {
-    border-bottom: 1px solid $hr-line-color;
-  }
-  @media screen and (min-width: $desktop) {
-    border-bottom: 1px solid $hr-line-color;
+.header {
+  // @media screen and (min-width: $tablet) {
+  //   border-bottom: -2px;
+  // }
+  // @media screen and (min-width: $desktop) {
+  //   border-bottom: -2px;
+  // }
+  &--hr {
+    @media screen and (min-width: $mobile) {
+      border-bottom: 1px solid $hr-line-color;
+    }
+    @media screen and (min-width: $tablet) {
+      border-bottom: 1px solid $hr-line-color;
+    }
+    @media screen and (min-width: $desktop) {
+      border-bottom: 1px solid $hr-line-color;
+    }
   }
 }
 
@@ -50,6 +61,7 @@
   }
 }
 .nav__link {
+  display: block;
   transition: color 250ms $timing-function;
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -94,6 +106,12 @@
       height: 4px;
       background-color: $accent-text-color;
       border-radius: 2px;
+
+      @media screen and (min-width: $tablet) {
+        @media screen and (max-width: 1199.98px) {
+          bottom: -3px;
+        }
+      }
     }
   }
 }
