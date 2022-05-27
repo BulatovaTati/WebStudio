@@ -1,15 +1,36 @@
 .team {
   background-color: $secondary-bcg-color;
-  &__title {
-    margin-bottom: 50px;
 
+  &__title {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 30px;
+      font-size: 28px;
+      line-height: 1.18;
+    }
+
+    @media screen and (min-width: $desktop) {
+      font-size: 36px;
+      line-height: 1.16;
+      margin-bottom: 50px;
+    }
+
     color: $primary-text-color;
   }
 }
 .team__list {
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199.98px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -30px;
+      margin-bottom: -30px;
+    }
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -20,15 +41,33 @@
   border-radius: 0px 0px 8px 8px;
   background-color: $accent-secondary-text-color;
 
-  &:not(:last-child) {
-    @media screen and (max-width: 767.98px) {
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
-    @media screen and (min-width: $desktop) {
+  }
+  @media screen and (min-width: $tablet) {
+    @media screen and (max-width: 1199.98px) {
+      width: calc((100% - 60px) / 2);
+      margin-right: 30px;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+      &:nth-last-child(-n + 2) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
       margin-right: 30px;
     }
   }
 }
+
 .team__container {
   padding-top: 30px;
   @media screen and (max-width: 1199.98px) {
@@ -75,6 +114,7 @@
     background-color: $accent-text-color;
   }
 }
+
 // .team {
 //   background-color: $secondary-bcg-color;
 //   &__title {
