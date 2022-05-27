@@ -134,11 +134,6 @@ a:focus {
   color: #ffffff;
 }
 
-@media screen and (min-width: 480px) {
-  .header--hr {
-    border-bottom: 1px solid #ececec;
-  }
-}
 @media screen and (min-width: 768px) {
   .header--hr {
     border-bottom: 1px solid #ececec;
@@ -246,20 +241,24 @@ a:focus {
   }
 }
 
-.nav__list .current {
-  position: relative;
-  color: #2196f3;
+@media screen and (min-width: 768px) {
+  .nav__list .current {
+    position: relative;
+    color: #2196f3;
+  }
 }
-.nav__list .current::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
+@media screen and (min-width: 768px) {
+  .nav__list .current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .nav__list .current::after {
@@ -335,14 +334,25 @@ a:focus {
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
-  fill: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link:hover, .contacts__link:focus {
+    fill: #2196f3;
+  }
 }
 
-.contacts__icon {
-  fill: currentColor;
-  cursor: pointer;
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    fill: currentColor;
+    cursor: pointer;
+  }
 }
 
+@media screen and (max-width: 767.98px) {
+  .icon-mail {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .icon-mail {
     margin-right: 8px;
@@ -358,6 +368,11 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .icon-tel {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) {
   .icon-tel {
     margin-right: 8px;
@@ -1534,7 +1549,6 @@ a:focus {
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .card-set__link {
     height: 100%;
-    width: 100%;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
