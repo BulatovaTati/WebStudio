@@ -71,9 +71,9 @@
 }
 
 .nav__list {
-  // @media screen and (max-width: 767.98px) {
-  //   margin-bottom: auto;
-  // }
+  @media screen and (max-width: 767.98px) {
+    margin-bottom: 306px;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
   }
