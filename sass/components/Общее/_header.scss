@@ -40,6 +40,11 @@
   }
 }
 .nav__item {
+  @media screen and (max-width: 767.98px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -53,10 +58,17 @@
 }
 .nav__link {
   display: block;
+
   transition: color 250ms $timing-function;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: $primary-text-color;
+
+  @media screen and (max-width: 767.98px) {
+    font-size: 40px;
+    line-height: 1.175;
+  }
+
   @media screen and (min-width: $tablet) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -110,8 +122,13 @@
 }
 
 // ...............................................Contacts
-.contacts {
+.contacts__list {
   margin-left: auto;
+  @media screen and (max-width: 767.98px) {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    margin-bottom: 64px;
+  }
   @media screen and (min-width: $tablet) {
     padding-top: 21px;
     padding-bottom: 21px;
@@ -138,13 +155,23 @@
     display: flex;
   }
 }
+.contacts__link--tel {
+  @media screen and (max-width: 767.98px) {
+    font-size: 34px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+}
 .contacts__link {
   transition: color 250ms $timing-function;
   white-space: nowrap;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: currentColor;
-
+  @media screen and (max-width: 767.98px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.16;
@@ -165,6 +192,30 @@
     }
   }
 }
+
+// ...............................Menu socials
+.menu-socials {
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.menu-socials__link {
+  @media screen and (max-width: 767.98px) {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $accent-text-color;
+  }
+}
+
+// .......................................................Icon
 .contacts__icon {
   @media screen and (min-width: $tablet) {
     fill: currentColor;
@@ -201,6 +252,7 @@
     height: 16px;
   }
 }
+// .............................................Menu
 
 .nav__menu-button {
   @media screen and (max-width: 767.98px) {
