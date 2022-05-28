@@ -30,21 +30,7 @@
     }
   }
 }
-
-.nav--flex {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-}
 .nav__item {
-  @media screen and (max-width: 767.98px) {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
-  }
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -93,6 +79,12 @@
   }
 }
 .nav__list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
   .current {
     @media screen and (min-width: $tablet) {
       position: relative;
@@ -122,12 +114,11 @@
 }
 
 // ...............................................Contacts
-.contacts__list {
+.contacts {
   margin-left: auto;
   @media screen and (max-width: 767.98px) {
     display: inline-flex;
     flex-direction: column-reverse;
-    margin-bottom: 64px;
   }
   @media screen and (min-width: $tablet) {
     padding-top: 21px;
@@ -150,7 +141,15 @@
     }
   }
 }
-.contacts--flex {
+.contacts__list {
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    @media screen and (max-width: 1199.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
   @media screen and (min-width: $desktop) {
     display: flex;
   }
@@ -175,6 +174,9 @@
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.16;
+    @media screen and (max-width: 1199.98px) {
+      padding-top: 21px;
+    }
   }
   @media screen and (min-width: $desktop) {
     font-size: inherit;
@@ -195,9 +197,6 @@
 
 // ...............................Menu socials
 .menu-socials {
-  @media screen and (max-width: 767.98px) {
-    display: flex;
-  }
   @media screen and (min-width: $tablet) {
     display: none;
   }
