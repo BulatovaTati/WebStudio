@@ -70,15 +70,10 @@
   }
 }
 
-.nav__list--flex {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-}
 .nav__list {
+  // @media screen and (max-width: 767.98px) {
+  //   margin-bottom: auto;
+  // }
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -114,18 +109,23 @@
 }
 
 // ...............................................Contacts
-.contacts {
-  margin-left: auto;
+.contacts__list {
   @media screen and (max-width: 767.98px) {
-    display: inline-flex;
+    display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 64px;
   }
+
   @media screen and (min-width: $tablet) {
-    padding-top: 21px;
-    padding-bottom: 21px;
+    margin-left: auto;
+    @media screen and (max-width: 1199.98px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
   @media screen and (min-width: $desktop) {
-    padding: 0;
+    display: flex;
   }
 }
 .contacts__item {
@@ -141,24 +141,6 @@
     }
   }
 }
-.contacts__list {
-  @media screen and (max-width: 767.98px) {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
-    @media screen and (max-width: 1199.98px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
-}
-
 .contacts__link {
   transition: color 250ms $timing-function;
   white-space: nowrap;
@@ -172,8 +154,9 @@
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.16;
-    @media screen and (max-width: 1199.98px) {
+    @media screen and (max-width: 1198.98px) {
       padding-top: 21px;
+      padding-bottom: 21px;
     }
   }
   @media screen and (min-width: $desktop) {
@@ -200,9 +183,19 @@
   }
 }
 // ...............................Menu socials
+.menu__container {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-grow: 1;
+  }
+}
 .menu-socials {
   @media screen and (max-width: 767.98px) {
     display: flex;
+    margin-bottom: 48px;
   }
   @media screen and (min-width: $tablet) {
     display: none;
