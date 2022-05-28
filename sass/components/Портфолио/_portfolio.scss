@@ -12,9 +12,6 @@
     margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
-    @media screen and (max-width: 1199.98px) {
-      flex-basis: 100%;
-    }
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -27,6 +24,7 @@
   padding: 20px 24px;
   border: 1px solid $other-bcg-color;
   border-top: none;
+
   @media screen and (min-width: $tablet) {
     @media screen and (max-width: 1199.98px) {
       flex-grow: 1;

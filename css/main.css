@@ -1622,12 +1622,6 @@ a:focus {
         flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .card-set {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .card-set {
     display: -webkit-box;
