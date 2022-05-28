@@ -142,6 +142,10 @@
   }
 }
 .contacts__list {
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   @media screen and (min-width: $tablet) {
     margin-left: auto;
     @media screen and (max-width: 1199.98px) {
@@ -154,13 +158,7 @@
     display: flex;
   }
 }
-.contacts__link--tel {
-  @media screen and (max-width: 767.98px) {
-    font-size: 34px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-  }
-}
+
 .contacts__link {
   transition: color 250ms $timing-function;
   white-space: nowrap;
@@ -194,7 +192,13 @@
     }
   }
 }
-
+.contacts__link--tel {
+  @media screen and (max-width: 767.98px) {
+    font-size: 34px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+  }
+}
 // ...............................Menu socials
 .menu-socials {
   @media screen and (min-width: $tablet) {
