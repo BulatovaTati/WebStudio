@@ -140,6 +140,11 @@ a:focus {
   color: #ffffff;
 }
 
+@media screen and (max-width: 767.98px) {
+  .header {
+    position: relative;
+  }
+}
 @media screen and (min-width: 768px) {
   .header--hr {
     border-bottom: 1px solid #ececec;
@@ -182,6 +187,11 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__item:not(:last-child) {
     margin-right: 50px;
@@ -225,7 +235,7 @@ a:focus {
 
 @media screen and (max-width: 767.98px) {
   .nav__list {
-    margin-bottom: 306px;
+    margin-bottom: 302px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -306,6 +316,11 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .contacts__item:not(:first-child) {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts__item:not(:last-child) {
     margin-bottom: 10px;
@@ -381,6 +396,12 @@ a:focus {
 @media screen and (max-width: 767.98px) {
   .menu__container {
     display: block;
+    padding: 48px 40px;
+    outline: 2px solid;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -395,30 +416,22 @@ a:focus {
 }
 
 @media screen and (max-width: 767.98px) {
-  .menu-socials {
+  .menu-socials-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 48px;
   }
 }
-@media screen and (min-width: 768px) {
-  .menu-socials {
-    display: none;
-  }
-}
 
 @media screen and (max-width: 767.98px) {
   .menu-socials__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .menu-socials__item:not(:last-child) {
-    margin-right: 10px;
   }
   .menu-socials__item:not(:last-child)::after {
     content: "";
@@ -428,6 +441,11 @@ a:focus {
     outline: 1px solid rgba(33, 33, 33, 0.2);
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu-socials__item {
+    display: none;
   }
 }
 
