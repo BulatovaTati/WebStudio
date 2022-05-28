@@ -207,9 +207,24 @@
     display: inline-flex;
     margin: 0;
     padding: 0;
+    border: none;
     background-color: transparent;
+    cursor: pointer;
   }
   @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+.nav__menu-button .icon__cross {
+  display: none;
+}
+.nav__menu-button.is-open .icon__cross {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
+}
+.nav__menu-button.is-open .icon__menu {
+  @media screen and (max-width: 767.98px) {
     display: none;
   }
 }

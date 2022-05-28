@@ -401,11 +401,29 @@ a:focus {
     display: inline-flex;
     margin: 0;
     padding: 0;
+    border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 }
 @media screen and (min-width: 768px) {
   .nav__menu-button {
+    display: none;
+  }
+}
+
+.nav__menu-button .icon__cross {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__menu-button.is-open .icon__cross {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__menu-button.is-open .icon__menu {
     display: none;
   }
 }
