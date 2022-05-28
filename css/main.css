@@ -394,6 +394,22 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .nav__menu-button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-button {
+    display: none;
+  }
+}
+
 .hero {
   margin-left: auto;
   margin-right: auto;
