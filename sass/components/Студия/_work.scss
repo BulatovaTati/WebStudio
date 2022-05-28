@@ -1,8 +1,8 @@
 .work {
   padding-top: 0;
-  // @media screen and (min-width: $desktop) {
-  display: none;
-  // }
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
   &__title {
     @media screen and (min-width: $desktop) {
       margin-bottom: 50px;

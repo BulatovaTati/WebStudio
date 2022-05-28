@@ -913,7 +913,11 @@ a:focus {
 
 .work {
   padding-top: 0;
-  display: none;
+}
+@media screen and (max-width: 1199.98px) {
+  .work {
+    display: none;
+  }
 }
 .work__title {
   font-weight: 700;
