@@ -13,9 +13,9 @@
 }
 
 .container-flex {
-  // @media screen and (max-width: 767.98px) {
-  //   position: relative;
-  // }
+  @media screen and (max-width: 767.98px) {
+    display: flex;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -201,14 +201,21 @@
 // ...............................Menu socials
 .menu__container {
   @media screen and (max-width: 767.98px) {
-    display: block;
+    display: none;
+
     padding: 48px 40px;
     outline: 2px solid;
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
+    background-color: $accent-secondary-text-color;
+
+    &.is-open {
+      display: block;
+    }
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-grow: 1;
@@ -291,10 +298,11 @@
 }
 // .............................................Menu
 
-.nav__menu-button {
+.nav__menu--button {
   @media screen and (max-width: 767.98px) {
     display: inline-flex;
     margin: 0;
+    margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
@@ -304,15 +312,15 @@
     display: none;
   }
 }
-.nav__menu-button .icon__cross {
+.nav__menu--button .icon__cross {
   display: none;
 }
-.nav__menu-button.is-open .icon__cross {
+.nav__menu--button.is-open .icon__cross {
   @media screen and (max-width: 767.98px) {
     display: block;
   }
 }
-.nav__menu-button.is-open .icon__menu {
+.nav__menu--button.is-open .icon__menu {
   @media screen and (max-width: 767.98px) {
     display: none;
   }
