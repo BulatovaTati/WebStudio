@@ -108,6 +108,10 @@ a:focus {
   outline-color: #2196f3;
 }
 
+.is-hidden {
+  display: none;
+}
+
 .header__logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -161,6 +165,9 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
@@ -404,7 +411,6 @@ a:focus {
   .menu__container {
     display: none;
     padding: 48px 40px;
-    outline: 2px solid;
     position: absolute;
     top: 100%;
     left: 0;
@@ -468,6 +474,11 @@ a:focus {
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .menu-socials__link:hover, .menu-socials__link:focus {
+    color: #757575;
   }
 }
 
@@ -523,18 +534,34 @@ a:focus {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     margin: 0;
-    margin-left: auto;
     padding: 0;
+    width: 100%;
     border: none;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
+  }
+  .nav__menu--button:hover .icon__menu, .nav__menu--button:focus .icon__menu, .nav__menu--button:hover .icon__cross, .nav__menu--button:focus .icon__cross {
+    fill: #2196f3;
   }
 }
 @media screen and (min-width: 768px) {
   .nav__menu--button {
     display: none;
   }
+}
+
+.icon__menu,
+.icon__cross {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__menu--button .icon__cross {
