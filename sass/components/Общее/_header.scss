@@ -65,6 +65,7 @@
   @media screen and (max-width: 767.98px) {
     font-size: 40px;
     line-height: 1.175;
+    outline: none;
   }
 
   @media screen and (min-width: $tablet) {
@@ -130,6 +131,7 @@
 
   @media screen and (min-width: $tablet) {
     margin-left: auto;
+
     @media screen and (max-width: 1199.98px) {
       display: flex;
       flex-direction: column;
@@ -164,13 +166,16 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   color: currentColor;
+
   @media screen and (max-width: 767.98px) {
     font-size: 24px;
     line-height: 1.16;
+    outline: none;
   }
   @media screen and (min-width: $tablet) {
     font-size: 12px;
     line-height: 1.16;
+
     @media screen and (max-width: 1198.98px) {
       padding-top: 21px;
       padding-bottom: 21px;
@@ -207,7 +212,7 @@
     padding: 48px 40px;
 
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
 
     width: 100%;
@@ -217,7 +222,9 @@
       display: block;
     }
   }
-
+  @media screen and (min-width: 650px) {
+    text-align: center;
+  }
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-grow: 1;
@@ -228,6 +235,9 @@
   @media screen and (max-width: 767.98px) {
     display: flex;
     margin-bottom: 48px;
+  }
+  @media screen and (min-width: 650px) {
+    justify-content: center;
   }
 }
 .menu-socials__item {
@@ -315,7 +325,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
-
+    z-index: 1;
     border: none;
     background-color: transparent;
     cursor: pointer;
