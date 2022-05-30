@@ -15,7 +15,13 @@
 
 .modal {
   @include centering-xy;
-  @include modal;
+  @media screen and (max-width: 1199.98px) {
+    @include modal-mobile;
+  }
+  @media screen and (min-width: $desktop) {
+    @include modal-desktop;
+  }
+
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function;
   background-color: $accent-secondary-text-color;
@@ -155,6 +161,9 @@
   @include flexible;
 
   margin-bottom: 30px;
+  @media screen and (max-width: 1199.98px) {
+    margin-bottom: 31px;
+  }
 }
 
 .form-checkbox__icon-container {
@@ -226,6 +235,10 @@
   line-height: 1.71;
   cursor: pointer;
 
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+    line-height: 1.16;
+  }
   &__link {
     color: $accent-text-color;
   }

@@ -321,6 +321,9 @@ a:focus {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,13 +689,6 @@ a:focus {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 528px;
-  height: 581px;
-  padding-top: 40px;
-  padding-bottom: 29px;
-  padding-left: 44px;
-  padding-right: 36px;
-  text-align: center;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,6 +696,25 @@ a:focus {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
+}
+@media screen and (max-width: 1199.98px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+    padding: 40px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+    padding-top: 40px;
+    padding-bottom: 29px;
+    padding-left: 44px;
+    padding-right: 36px;
+    text-align: center;
+  }
 }
 
 .modal__button--close {
@@ -866,6 +881,11 @@ a:focus {
           align-items: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1199.98px) {
+  .form-checkbox {
+    margin-bottom: 31px;
+  }
+}
 
 .form-checkbox__icon-container {
   position: relative;
@@ -940,6 +960,12 @@ a:focus {
 .check-policy {
   line-height: 1.71;
   cursor: pointer;
+}
+@media screen and (max-width: 1199.98px) {
+  .check-policy {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 .check-policy__link {
   color: #2196f3;
