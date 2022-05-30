@@ -159,8 +159,8 @@
 // ...................................checkbox
 .form-checkbox {
   @include flexible;
-
   margin-bottom: 30px;
+
   @media screen and (max-width: 1199.98px) {
     margin-bottom: 31px;
   }
@@ -172,7 +172,6 @@
   display: block;
   width: 16px;
   height: 15px;
-
   margin-right: 8px;
 
   cursor: pointer;
@@ -208,6 +207,7 @@
 
 .form-checkbox__icon--uncheck {
   @include centering-left-0;
+
   display: block;
 
   width: 16px;
