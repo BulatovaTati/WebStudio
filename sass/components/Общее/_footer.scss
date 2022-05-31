@@ -151,7 +151,7 @@
     width: 50px;
     height: 50px;
 
-    background-color: #2f303a;
+    background-color: $primary-bcg-color;
     outline: 2px solid $accent-text-color;
     border: none;
     border-radius: 50%;
@@ -162,7 +162,7 @@
 }
 
 .arrow-top {
-  fill: #fff;
+  fill: $accent-secondary-text-color;
 }
 
 @keyframes slide-top {
