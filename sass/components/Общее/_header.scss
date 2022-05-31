@@ -24,19 +24,53 @@
     display: flex;
   }
 }
-.nav {
-  align-items: center;
-  @media screen and (min-width: $tablet) {
-    &__list {
-      margin-left: 88px;
+// .............................................Menu
+
+.nav__menu--button {
+  @media screen and (max-width: 767.98px) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+
+    &:hover .icon__menu,
+    &:focus .icon__menu,
+    &:hover .icon__cross,
+    &:focus .icon__cross {
+      fill: $accent-text-color;
     }
   }
-  @media screen and (min-width: $desktop) {
-    &__list {
-      margin-left: 93px;
-    }
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
+
+.icon__menu,
+.icon__cross {
+  transition: fill 250ms $timing-function;
+}
+.nav__menu--button .icon__cross {
+  display: none;
+}
+.nav__menu--button.is-open .icon__cross {
+  @media screen and (max-width: 767.98px) {
+    display: block;
+  }
+}
+.nav__menu--button.is-open .icon__menu {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+}
+
 .nav__item {
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
@@ -319,51 +353,5 @@
     margin-right: 10px;
     width: 12px;
     height: 16px;
-  }
-}
-// .............................................Menu
-
-.nav__menu--button {
-  @media screen and (max-width: 767.98px) {
-    display: inline-flex;
-    align-items: center;
-    justify-content: end;
-
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 2;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-
-    &:hover .icon__menu,
-    &:focus .icon__menu,
-    &:hover .icon__cross,
-    &:focus .icon__cross {
-      fill: $accent-text-color;
-    }
-  }
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.icon__menu,
-.icon__cross {
-  transition: fill 250ms $timing-function;
-}
-.nav__menu--button .icon__cross {
-  display: none;
-}
-.nav__menu--button.is-open .icon__cross {
-  @media screen and (max-width: 767.98px) {
-    display: block;
-  }
-}
-.nav__menu--button.is-open .icon__menu {
-  @media screen and (max-width: 767.98px) {
-    display: none;
   }
 }
