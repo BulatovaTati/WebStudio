@@ -340,7 +340,7 @@ a:focus {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .nav__list .current::after {
-    bottom: -3px;
+    bottom: -2px;
   }
 }
 
