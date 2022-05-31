@@ -745,8 +745,8 @@ a:focus {
 }
 
 .hero__button {
-  -webkit-animation: swing 4s ease-in infinite forwards;
-          animation: swing 4s ease-in infinite forwards;
+  -webkit-animation: swing 7s ease-in infinite forwards;
+          animation: swing 7s ease-in infinite forwards;
 }
 
 @-webkit-keyframes swing {
