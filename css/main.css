@@ -1123,40 +1123,6 @@ a:focus {
   outline: none;
 }
 
-.features__list-title {
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  color: #212121;
-  text-transform: uppercase;
-}
-@media screen and (max-width: 767.98px) {
-  .features__list-title {
-    text-align: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__list-title {
-    text-align: left;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__list-title {
-    text-align: left;
-  }
-}
-
-.features__list-text {
-  line-height: 1.72;
-  color: currentColor;
-}
-@media screen and (min-width: 1200px) {
-  .features__list-text {
-    width: 270px;
-  }
-}
-
 @media screen and (min-width: 480px) {
   .features__list {
     margin-bottom: -30px;
@@ -1228,6 +1194,40 @@ a:focus {
 }
 .features__icon--container .features__icon {
   height: 120px;
+}
+
+.features__list-title {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: #212121;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 767.98px) {
+  .features__list-title {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features__list-title {
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features__list-title {
+    text-align: left;
+  }
+}
+
+.features__list-text {
+  line-height: 1.72;
+  color: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .features__list-text {
+    width: 270px;
+  }
 }
 
 .work {
@@ -1500,8 +1500,6 @@ a:focus {
 }
 
 .clients__link {
-  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1511,15 +1509,12 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  height: 92px;
-}
-@media screen and (max-width: 767.98px) {
-  .clients__link {
-    width: 100%;
-  }
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 1199.98px) {
   .clients__link {

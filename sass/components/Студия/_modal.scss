@@ -15,24 +15,25 @@
 
 .modal {
   @include centering-xy;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms $timing-function;
+  background-color: $accent-secondary-text-color;
 
   @media screen and (max-width: 479.98px) {
     width: 90%;
     left: 49%;
     padding: 40px;
   }
+
   @media screen and (min-width: $mobile) {
     @media screen and (max-width: 1199.98px) {
       @include modal-mobile;
     }
   }
+
   @media screen and (min-width: $desktop) {
     @include modal-desktop;
   }
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms $timing-function;
-  background-color: $accent-secondary-text-color;
 }
 
 .modal__button--close {
@@ -173,6 +174,7 @@
   @media screen and (max-width: 1199.98px) {
     margin-bottom: 31px;
   }
+
   @media screen and (min-width: $desktop) {
     align-items: center;
   }

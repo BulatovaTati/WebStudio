@@ -1,34 +1,8 @@
-.features__list-title {
-  margin-bottom: 10px;
-
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
-  color: $primary-text-color;
-  text-transform: uppercase;
-
-  @media screen and(max-width: 767.98px) {
-    text-align: center;
-  }
-  @media screen and (min-width: $tablet) {
-    text-align: left;
-  }
-  @media screen and (min-width: $desktop) {
-    text-align: left;
-  }
-}
-.features__list-text {
-  line-height: 1.72;
-  color: currentColor;
-
-  @media screen and (min-width: $desktop) {
-    width: 270px;
-  }
-}
 .features__list {
   @media screen and (min-width: $mobile) {
     margin-bottom: -30px;
   }
+
   @media screen and(min-width: $tablet) {
     @media screen and(max-width: 1199.98px) {
       display: flex;
@@ -37,12 +11,14 @@
       margin-bottom: -30px;
     }
   }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
     margin-right: -30px;
   }
 }
+
 .features__item {
   @media screen and(min-width: $mobile) {
     &:not(:last-child) {
@@ -51,6 +27,7 @@
       }
     }
   }
+
   @media screen and(min-width: $tablet) {
     @media screen and(max-width: 1199.98px) {
       width: calc((100% - 60px) / 2);
@@ -66,6 +43,7 @@
       margin-bottom: 0;
     }
   }
+
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-right: 30px;
@@ -83,5 +61,34 @@
 
   .features__icon {
     height: 120px;
+  }
+}
+.features__list-title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  color: $primary-text-color;
+  text-transform: uppercase;
+
+  @media screen and(max-width: 767.98px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
+.features__list-text {
+  line-height: 1.72;
+  color: currentColor;
+
+  @media screen and (min-width: $desktop) {
+    width: 270px;
   }
 }
