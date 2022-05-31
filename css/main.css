@@ -744,6 +744,56 @@ a:focus {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
+.hero__button {
+  -webkit-animation: swing 7s ease-in-out infinite forwards;
+          animation: swing 7s ease-in-out infinite forwards;
+}
+
+@-webkit-keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes swing {
+  0% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  4% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  8% {
+    -webkit-transform: rotate(3deg);
+            transform: rotate(3deg);
+  }
+  12% {
+    -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);
+  }
+  16% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
