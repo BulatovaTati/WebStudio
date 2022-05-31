@@ -781,7 +781,6 @@ a:focus {
   .modal {
     width: 90%;
     padding: 40px;
-    text-align: center;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
