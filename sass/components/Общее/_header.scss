@@ -227,9 +227,11 @@
       display: block;
     }
   }
+
   @media screen and (min-width: 650px) {
     text-align: center;
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-grow: 1;
