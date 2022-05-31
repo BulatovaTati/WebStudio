@@ -135,12 +135,11 @@
   }
 }
 //.............Скролл
-html {
-  @media screen and (min-width: $desktop) {
-    scroll-behavior: smooth;
-  }
-}
+
 .scroll-to-top {
+  @media screen and (max-width: 1199.98px) {
+    display: none;
+  }
   @media screen and (min-width: $desktop) {
     position: fixed;
     bottom: 190px;
