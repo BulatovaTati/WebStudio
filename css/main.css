@@ -185,6 +185,58 @@ a:focus {
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .nav__menu--button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+  }
+  .nav__menu--button:hover .icon__menu, .nav__menu--button:focus .icon__menu, .nav__menu--button:hover .icon__cross, .nav__menu--button:focus .icon__cross {
+    fill: #2196f3;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__menu--button {
+    display: none;
+  }
+}
+
+.icon__menu,
+.icon__cross {
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__menu--button .icon__cross {
+  display: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__menu--button.is-open .icon__cross {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .nav__menu--button.is-open .icon__menu {
+    display: none;
+  }
+}
+
 .nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -193,11 +245,6 @@ a:focus {
 @media screen and (min-width: 768px) {
   .nav__list {
     margin-left: 88px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .nav__list {
-    margin-left: 93px;
   }
 }
 
@@ -549,58 +596,6 @@ a:focus {
     margin-right: 10px;
     width: 12px;
     height: 16px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .nav__menu--button {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    z-index: 2;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    outline: none;
-  }
-  .nav__menu--button:hover .icon__menu, .nav__menu--button:focus .icon__menu, .nav__menu--button:hover .icon__cross, .nav__menu--button:focus .icon__cross {
-    fill: #2196f3;
-  }
-}
-@media screen and (min-width: 768px) {
-  .nav__menu--button {
-    display: none;
-  }
-}
-
-.icon__menu,
-.icon__cross {
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.nav__menu--button .icon__cross {
-  display: none;
-}
-
-@media screen and (max-width: 767.98px) {
-  .nav__menu--button.is-open .icon__cross {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .nav__menu--button.is-open .icon__menu {
-    display: none;
   }
 }
 

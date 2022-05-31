@@ -57,6 +57,7 @@
 .icon__cross {
   transition: fill 250ms $timing-function;
 }
+
 .nav__menu--button .icon__cross {
   display: none;
 }
@@ -65,23 +66,34 @@
     display: block;
   }
 }
+
 .nav__menu--button.is-open .icon__menu {
   @media screen and (max-width: 767.98px) {
     display: none;
   }
 }
 
+.nav {
+  align-items: center;
+  @media screen and (min-width: $tablet) {
+    &__list {
+      margin-left: 88px;
+    }
+  }
+}
 .nav__item {
   @media screen and (max-width: 767.98px) {
     &:not(:last-child) {
       margin-bottom: 32px;
     }
   }
+
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
       margin-right: 50px;
     }
   }
+
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
       margin-right: 50px;
