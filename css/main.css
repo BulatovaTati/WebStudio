@@ -2110,12 +2110,6 @@ a:focus {
     height: 100%;
   }
 }
-@media screen and (min-width: 1200px) {
-  .card-set__img {
-    width: 370px;
-    height: 294px;
-  }
-}
 
 .card-set__overlay-box {
   position: relative;
