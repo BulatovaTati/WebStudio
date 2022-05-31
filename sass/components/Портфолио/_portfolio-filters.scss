@@ -1,4 +1,4 @@
-.portfolio__filters {
+.portfolio__filters-list {
   display: flex;
 
   @media screen and (max-width: 767.98px) {
@@ -6,28 +6,34 @@
     justify-content: left;
     margin-bottom: 40px;
   }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 30px;
     justify-content: center;
   }
+
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
     justify-content: center;
   }
 }
+
 .portfolio__item {
   &:not(:last-child) {
     @media screen and (max-width: 767.98px) {
       margin-bottom: 15px;
       margin-right: 8px;
+
       &:nth-last-child(-n + 2) {
         margin-bottom: 0;
       }
     }
+
     @media screen and (min-width: $tablet) {
       margin-right: 8px;
       margin-bottom: 0;
     }
+
     @media screen and (min-width: $desktop) {
       margin-right: 8px;
       margin-bottom: 0;
