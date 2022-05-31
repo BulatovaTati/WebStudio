@@ -134,3 +134,44 @@
     background-color: $accent-text-color;
   }
 }
+//.............Скролл
+html {
+  @media screen and (min-width: $desktop) {
+    scroll-behavior: smooth;
+  }
+}
+.scroll-to-top {
+  @media screen and (min-width: $desktop) {
+    position: fixed;
+    bottom: 190px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+
+    background-color: #2f303a;
+    outline: 2px solid $accent-text-color;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    animation: slide-top 1s linear 2s infinite alternate both;
+  }
+}
+
+.arrow-top {
+  fill: #fff;
+}
+
+@keyframes slide-top {
+  from {
+    transform: translateY(-5px);
+  }
+
+  to {
+    transform: translateY(5px);
+  }
+}
