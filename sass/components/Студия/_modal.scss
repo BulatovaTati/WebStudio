@@ -15,8 +15,18 @@
 
 .modal {
   @include centering-xy;
-  @media screen and (max-width: 1199.98px) {
-    @include modal-mobile;
+
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+    height: 609px;
+    padding: 40px;
+
+    text-align: center;
+  }
+  @media screen and (min-width: $mobile) {
+    @media screen and (max-width: 1199.98px) {
+      @include modal-mobile;
+    }
   }
   @media screen and (min-width: $desktop) {
     @include modal-desktop;
@@ -158,11 +168,15 @@
 
 // ...................................checkbox
 .form-checkbox {
-  @include flexible;
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
 
   @media screen and (max-width: 1199.98px) {
     margin-bottom: 31px;
+  }
+  @media screen and (min-width: $desktop) {
+    align-items: center;
   }
 }
 
