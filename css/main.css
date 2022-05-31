@@ -1538,7 +1538,7 @@ a:focus {
 }
 
 @media screen and (min-width: 768px) {
-  .footer-container {
+  .footer--container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1550,7 +1550,7 @@ a:focus {
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-container {
+  .footer--container {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
@@ -1588,10 +1588,10 @@ a:focus {
 .address {
   font-style: normal;
 }
+
 .address__list {
   margin-top: 20px;
 }
-
 @media screen and (max-width: 767.98px) {
   .address__list {
     margin-bottom: 60px;
@@ -1679,7 +1679,8 @@ a:focus {
     display: flex;
   }
 }
-.footer-socials__list .footer-socials__item:not(:last-child) {
+
+.footer-socials__item:not(:last-child) {
   margin-right: 10px;
 }
 

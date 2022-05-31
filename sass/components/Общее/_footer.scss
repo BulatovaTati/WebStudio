@@ -4,7 +4,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-container {
+
+.footer--container {
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
@@ -22,13 +23,12 @@
     display: flex;
   }
 }
+
 .footer__address-container {
   @media screen and (max-width: 767.98px) {
     text-align: center;
   }
-  @media screen and (min-width: $tablet) {
-    // text-align: center;
-  }
+
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
     text-align: left;
@@ -36,24 +36,27 @@
     margin-bottom: 0;
   }
 }
+
 .address {
   font-style: normal;
-  &__list {
-    margin-top: 20px;
-  }
 }
 
 .address__list {
+  margin-top: 20px;
+
   @media screen and (max-width: 767.98px) {
     margin-bottom: 60px;
   }
+
   @media screen and (min-width: $tablet) {
     margin-bottom: 60px;
   }
+
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
   }
 }
+
 .address__item {
   &:not(:last-child) {
     margin-bottom: 8px;
@@ -65,6 +68,7 @@
     }
   }
 }
+
 .address__link {
   transition: color 250ms $timing-function;
   color: $contacts-footer-color;
@@ -85,9 +89,11 @@
     text-align: center;
     margin-bottom: 60px;
   }
+
   @media screen and (min-width: $tablet) {
     text-align: center;
   }
+
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
     margin-bottom: 0;
@@ -108,16 +114,22 @@
     display: flex;
     justify-content: center;
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
+
   @media screen and (min-width: $desktop) {
     display: flex;
   }
-  .footer-socials__item:not(:last-child) {
+}
+
+.footer-socials__item {
+  &:not(:last-child) {
     margin-right: 10px;
   }
 }
+
 .footer-socials__link {
   transition: background-color 250ms $timing-function;
   @include flexible;
@@ -134,12 +146,13 @@
     background-color: $accent-text-color;
   }
 }
-//.............Скролл
 
+//.............Скролл
 .scroll-to-top {
   @media screen and (max-width: 1199.98px) {
     display: none;
   }
+
   @media screen and (min-width: $desktop) {
     position: fixed;
     bottom: 190px;
