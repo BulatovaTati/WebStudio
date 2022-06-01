@@ -20,11 +20,9 @@
 }
 
 .features__item {
-  @media screen and(min-width: $mobile) {
-    &:not(:last-child) {
-      @media screen and(max-width: 767.98px) {
-        margin-bottom: 30px;
-      }
+  &:not(:last-child) {
+    @media screen and (max-width: 767.98px) {
+      margin-bottom: 30px;
     }
   }
 

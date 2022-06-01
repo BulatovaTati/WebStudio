@@ -1150,7 +1150,7 @@ a:focus {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
