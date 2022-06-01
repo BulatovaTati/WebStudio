@@ -7,14 +7,14 @@ body {
 
   background: $accent-secondary-text-color;
   color: $secondary-text-color;
+  overflow-x: hidden;
 }
 
 .container {
+  overflow-x: hidden;
+  width: 100%;
   padding: 0px 15px;
   @include push--auto;
-  @media screen and (max-width: 479.98px) {
-    width: 100%;
-  }
   @media screen and (min-width: $mobile) {
     width: 480px;
   }

@@ -6,17 +6,15 @@ body {
   letter-spacing: 0.03em;
   background: #ffffff;
   color: #757575;
+  overflow-x: hidden;
 }
 
 .container {
+  overflow-x: hidden;
+  width: 100%;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 479.98px) {
-  .container {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -464,7 +462,7 @@ a:focus {
   .menu__container {
     display: none;
     padding: 48px 40px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
