@@ -15,7 +15,6 @@
   background-color: $primary-bcg-color;
 
   @media screen and (max-width: 767.98px) {
-    height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero/mobile/bcg1x.jpg');
     background-repeat: no-repeat;
