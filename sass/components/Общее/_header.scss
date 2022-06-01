@@ -11,30 +11,27 @@
     }
   }
 }
-
-.container-flex {
+.navigation {
   @media screen and (max-width: 767.98px) {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-  }
-  @media screen and (min-width: $desktop) {
-    display: flex;
+
+    align-items: center;
   }
 }
+
 // .............................................Menu
 
 .nav__menu--button {
   @media screen and (max-width: 767.98px) {
     display: inline-flex;
-    align-items: center;
-    justify-content: end;
-
     margin: 0;
-    padding: 0;
-    width: 100%;
+    padding: 10px 0;
+
     z-index: 2;
     border: none;
     background-color: transparent;
@@ -52,35 +49,66 @@
     display: none;
   }
 }
-
-.icon__menu,
 .icon__cross {
-  transition: fill 250ms $timing-function;
+  opacity: 0;
+  transform: translateX(-100%);
+
+  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 }
 
-.nav__menu--button .icon__cross {
-  display: none;
+.icon__menu {
+  transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+}
+.nav__menu--button.is-open .icon__menu {
+  opacity: 0;
+  transform: translateX(100%);
 }
 .nav__menu--button.is-open .icon__cross {
-  @media screen and (max-width: 767.98px) {
-    display: block;
-  }
+  opacity: 1;
+  transform: translateX(0);
 }
-
-.nav__menu--button.is-open .icon__menu {
+.nav__menu--button.is-open ~ .menu__container {
+  transform: translateX(0);
+  visibility: visible;
+  pointer-events: initial;
+}
+.menu__container {
   @media screen and (max-width: 767.98px) {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+
+    width: 100vw;
+    height: 100vh;
+
+    overflow: auto;
+    pointer-events: none;
+    transform: translateX(-100%);
+    transition: transform 250ms $timing-function;
+    visibility: hidden;
+    z-index: 1;
+
+    background-color: $accent-secondary-text-color;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 88px;
   }
 }
 
 .nav__list {
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 302px;
-  }
-
   @media screen and (min-width: $tablet) {
     display: flex;
-    margin-left: 88px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -183,7 +211,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: start;
     }
   }
   @media screen and (min-width: $desktop) {
@@ -256,72 +283,45 @@
     font-size: 34px;
     line-height: 1.25;
     letter-spacing: 0.02em;
+    color: $accent-text-color;
   }
 }
 // ...............................Menu socials
-.menu__container {
-  @media screen and (max-width: 767.98px) {
-    display: none;
-
-    padding: 48px 40px;
-
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
-    width: 100%;
-    background-color: $accent-secondary-text-color;
-
-    &.is-open {
-      display: block;
-    }
-  }
-
-  @media screen and (min-width: 650px) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-grow: 1;
-  }
-}
 
 .menu-socials-list {
   @media screen and (max-width: 767.98px) {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
-
-  @media screen and (min-width: 650px) {
-    justify-content: center;
+  @media screen and (min-width: $tablet) {
+    display: none;
   }
 }
 
 .menu-socials__item {
   @media screen and (max-width: 767.98px) {
-    display: inline-flex;
+    display: flex;
     align-items: center;
 
-    &:not(:last-child)::after {
-      content: '';
-      display: block;
-      width: 22px;
-      height: 0;
+    margin-bottom: 5px;
 
-      outline: 1px solid rgba(33, 33, 33, 0.2);
-      transform: rotate(90deg);
+    &:not(:last-child) {
+      margin-right: 10px;
+
+      &::after {
+        content: '';
+        margin-left: 10px;
+        width: 1px;
+        height: 22px;
+        background-color: rgba(33, 33, 33, 0.2);
+      }
     }
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: none;
   }
 }
 
 .menu-socials__link {
   @media screen and (max-width: 767.98px) {
-    display: inline-block;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.22;
@@ -332,7 +332,7 @@
 
     &:hover,
     &:focus {
-      color: #757575;
+      color: $secondary-text-color;
     }
   }
 }
