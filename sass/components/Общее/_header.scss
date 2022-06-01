@@ -265,7 +265,7 @@
 
     padding: 48px 40px;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -291,7 +291,6 @@
 .menu-socials-list {
   @media screen and (max-width: 767.98px) {
     display: flex;
-    margin-bottom: 48px;
   }
 
   @media screen and (min-width: 650px) {
