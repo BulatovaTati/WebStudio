@@ -2168,6 +2168,7 @@ body.is-modal-shown, body.is-menu-shown {
   .hero--small {
     padding-top: 60px;
     padding-bottom: 60px;
+    height: auto;
   }
 }
 
