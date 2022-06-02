@@ -292,7 +292,7 @@ a:focus {
   }
 }
 
-body.is-open {
+body.is-modal-shown, body.is-menu-shown {
   overflow: hidden;
 }
 
