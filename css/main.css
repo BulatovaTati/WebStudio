@@ -2152,4 +2152,42 @@ body.is-modal-shown, body.is-menu-shown {
     height: 100%;
     width: 100%;
   }
+}
+
+.form__field--big {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 479.98px) {
+  .hero--small {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero--small {
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .container--flex {
+    max-width: 80vw;
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479.98px) {
+  .hero__title--center {
+    margin: 0;
+    width: 200px;
+    display: inline-block;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -51,3 +51,32 @@
 // .contacts--center {
 //   justify-content: center;
 // }
+
+.form__field--big {
+  margin-bottom: 30px;
+}
+.hero--small {
+  @media screen and (max-width: 479.98px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 50px;
+  }
+}
+.container--flex {
+  @media screen and (max-width: 479.98px) {
+    max-width: 80vw;
+    display: inline-block;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+.hero__title--center {
+  @media screen and (max-width: 479.98px) {
+    margin: 0;
+    width: 200px;
+    display: inline-block;
+  }
+}
