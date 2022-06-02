@@ -154,28 +154,27 @@
   }
 
   @media screen and (min-width: $desktop) {
-    position: fixed;
-
     @media screen and (min-width: 1300px) {
+      position: fixed;
       bottom: 170px;
       right: 8%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 50px;
+      height: 50px;
+
+      background-color: $primary-bcg-color;
+      outline: 2px solid $accent-text-color;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+
+      animation: slide-top 1s linear 2s infinite alternate both;
+      transition: opacity 250ms $timing-function;
     }
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 50px;
-    height: 50px;
-
-    background-color: $primary-bcg-color;
-    outline: 2px solid $accent-text-color;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-
-    animation: slide-top 1s linear 2s infinite alternate both;
-    transition: opacity 250ms $timing-function;
   }
 }
 .js-transparent {
