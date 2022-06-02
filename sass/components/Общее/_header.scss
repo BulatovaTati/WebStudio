@@ -19,8 +19,6 @@
   }
   @media screen and (min-width: $tablet) {
     display: flex;
-
-    align-items: center;
   }
 }
 
@@ -58,6 +56,11 @@
 
 .icon__menu {
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
+}
+.menu__container.is-open {
+  body {
+    overflow: hidden;
+  }
 }
 .nav__menu--button.is-open .icon__menu {
   opacity: 0;
@@ -101,7 +104,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-    flex-direction: row;
+
     margin-left: 88px;
   }
 }
@@ -205,13 +208,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-left: auto;
-
-    @media screen and (max-width: 1199.98px) {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+    display: flex;
+    flex-direction: column;
   }
   @media screen and (min-width: $desktop) {
     display: flex;
@@ -284,6 +282,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: $accent-text-color;
+    white-space: normal;
   }
 }
 // ...............................Menu socials
