@@ -11,6 +11,7 @@
     align-items: baseline;
     justify-content: space-around;
   }
+
   @media screen and (min-width: $desktop) {
     align-items: baseline;
     display: flex;
@@ -83,6 +84,7 @@
     color: $accent-secondary-text-color;
   }
 }
+
 // ...................................................footer-socials
 .footer-socials {
   @media screen and (max-width: 767.98px) {
@@ -132,6 +134,7 @@
 
 .footer-socials__link {
   transition: background-color 250ms $timing-function;
+
   @include flexible;
 
   width: 44px;
@@ -177,10 +180,12 @@
     }
   }
 }
+
 .js-transparent {
   opacity: 0;
   pointer-events: none;
 }
+
 .arrow-top {
   fill: $accent-secondary-text-color;
 }

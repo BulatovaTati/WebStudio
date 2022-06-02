@@ -12,13 +12,17 @@ body {
 .container {
   width: 100%;
   padding: 0px 15px;
-  @include push--auto;
+
+  @extend %push--auto;
+
   @media screen and (min-width: $mobile) {
     width: 480px;
   }
+
   @media screen and (min-width: $tablet) {
     width: 768px;
   }
+
   @media screen and (min-width: $desktop) {
     width: 1200px;
   }
@@ -28,7 +32,7 @@ body {
 .position,
 .title,
 .text {
-  @include push--zero;
+  @extend %push--zero;
   list-style: none;
 }
 
@@ -37,14 +41,17 @@ body {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   @media screen and (min-width: $mobile) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;

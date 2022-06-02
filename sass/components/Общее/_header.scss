@@ -2,21 +2,25 @@
   @media screen and (max-width: 767.98px) {
     position: relative;
   }
+
   &--hr {
     @media screen and (min-width: $tablet) {
       border-bottom: 1px solid $hr-line-color;
     }
+
     @media screen and (min-width: $desktop) {
       border-bottom: 1px solid $hr-line-color;
     }
   }
 }
+
 .navigation {
   @media screen and (max-width: 767.98px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
@@ -43,10 +47,12 @@
       fill: $accent-text-color;
     }
   }
+
   @media screen and (min-width: $tablet) {
     display: none;
   }
 }
+
 .icon__cross {
   opacity: 0;
   transform: translateX(-100%);
@@ -62,15 +68,18 @@
   opacity: 0;
   transform: translateX(100%);
 }
+
 .nav__menu--button.is-open .icon__cross {
   opacity: 1;
   transform: translateX(0);
 }
-.nav__menu--button.is-open ~ .menu__container {
+
+.nav__menu--button.is-open~.menu__container {
   transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
 }
+
 .menu__container {
   @media screen and (max-width: 767.98px) {
     position: absolute;
@@ -96,17 +105,21 @@
 
     background-color: $accent-secondary-text-color;
   }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
     margin-left: 88px;
     flex-grow: 1;
+
     .contacts {
       margin-left: auto;
     }
   }
 }
+
 body {
+
   &.is-modal-shown,
   &.is-menu-shown {
     overflow: hidden;
@@ -192,6 +205,7 @@ body {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
   @media screen and (min-width: $desktop) {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -215,6 +229,7 @@ body {
     display: flex;
     flex-direction: column;
   }
+
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-direction: row;
@@ -227,6 +242,7 @@ body {
       margin-bottom: 32px;
     }
   }
+
   @media screen and (min-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -267,7 +283,9 @@ body {
   @media screen and (min-width: $desktop) {
     font-size: inherit;
     line-height: inherit;
+
     @include flexible;
+
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -281,6 +299,7 @@ body {
     }
   }
 }
+
 .contacts__link--tel {
   @media screen and (max-width: 767.98px) {
     font-size: 34px;
@@ -290,6 +309,7 @@ body {
     white-space: normal;
   }
 }
+
 // ...............................Menu socials
 
 .menu-socials-list {
@@ -298,6 +318,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
   }
+
   @media screen and (min-width: $tablet) {
     display: none;
   }

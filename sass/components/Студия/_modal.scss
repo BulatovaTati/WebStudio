@@ -44,7 +44,8 @@
 
 .modal__button--close {
   @include flexible;
-  @include push--zero;
+
+  @extend %push--zero;
 
   position: absolute;
   top: 8px;
@@ -109,6 +110,7 @@
     border-color: $accent-text-color;
     outline: 0;
   }
+
   &:hover .form__icon,
   &:focus-within .form__icon {
     fill: $accent-text-color;
@@ -155,6 +157,7 @@
 }
 
 .form__field {
+
   .form__comments:hover,
   .form__comments:focus-within {
     border-color: $accent-text-color;
@@ -166,6 +169,7 @@
   .form__comments::placeholder {
     color: rgba(117, 117, 117, 0.5);
   }
+
   .form__comments:hover::placeholder {
     color: $accent-text-color;
   }
@@ -219,7 +223,7 @@
   transform: scale(0.9);
   transition: opacity 250ms $timing-function, transform 250ms $timing-function;
 
-  .form-checkbox_input:checked + & {
+  .form-checkbox_input:checked+& {
     transform: scale(1);
     opacity: 1;
   }
@@ -237,16 +241,16 @@
   border: 2px solid $primary-text-color;
   transition: border-color 250ms $timing-function, filter 250ms $timing-function;
 
-  .form-checkbox_input:checked ~ & {
+  .form-checkbox_input:checked~& {
     border-color: $accent-text-color;
   }
 }
 
-.form-checkbox_input:hover ~ .form-checkbox__icon--uncheck,
-.form-checkbox_input:focus ~ .form-checkbox__icon--uncheck {
+.form-checkbox_input:hover~.form-checkbox__icon--uncheck,
+.form-checkbox_input:focus~.form-checkbox__icon--uncheck {
   border-color: $accent-text-color;
 
-  .form-checkbox_input:hover:checked ~ .form-checkbox__icon--uncheck {
+  .form-checkbox_input:hover:checked~.form-checkbox__icon--uncheck {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 }
@@ -259,6 +263,7 @@
     font-size: 12px;
     line-height: 1.16;
   }
+
   &__link {
     color: $accent-text-color;
   }
