@@ -1736,6 +1736,8 @@ body.is-modal-shown, body.is-menu-shown {
     cursor: pointer;
     -webkit-animation: slide-top 1s linear 2s infinite alternate both;
             animation: slide-top 1s linear 2s infinite alternate both;
+    -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 

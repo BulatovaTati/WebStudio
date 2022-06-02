@@ -172,6 +172,7 @@
     cursor: pointer;
 
     animation: slide-top 1s linear 2s infinite alternate both;
+    transition: opacity 250ms $timing-function;
   }
 }
 .js-transparent {
