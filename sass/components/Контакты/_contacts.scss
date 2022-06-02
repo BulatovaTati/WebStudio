@@ -3,10 +3,11 @@
 }
 .hero--small {
   @media screen and (max-width: 479.98px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: $tablet) {
     padding-top: 90px;
     padding-bottom: 90px;
     height: auto;
