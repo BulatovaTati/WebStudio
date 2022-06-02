@@ -174,7 +174,9 @@
     animation: slide-top 1s linear 2s infinite alternate both;
   }
 }
-
+.js-transparent {
+  opacity: 0;
+}
 .arrow-top {
   fill: $accent-secondary-text-color;
 }
