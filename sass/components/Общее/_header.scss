@@ -57,11 +57,7 @@
 .icon__menu {
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 }
-.menu__container.is-open {
-  body {
-    overflow: hidden;
-  }
-}
+
 .nav__menu--button.is-open .icon__menu {
   opacity: 0;
   transform: translateX(100%);
@@ -92,7 +88,7 @@
     width: 100vw;
     height: 100vh;
 
-    overflow: auto;
+    // overflow: auto;
     pointer-events: none;
     transform: translateX(-100%);
     transition: transform 250ms $timing-function;
@@ -104,11 +100,18 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
-
     margin-left: 88px;
+    flex-grow: 1;
+    .contacts {
+      margin-left: auto;
+    }
   }
 }
-
+body {
+  &.is-open {
+    overflow: hidden;
+  }
+}
 .nav__list {
   @media screen and (min-width: $tablet) {
     display: flex;
@@ -213,6 +216,7 @@
   }
   @media screen and (min-width: $desktop) {
     display: flex;
+    flex-direction: row;
   }
 }
 
