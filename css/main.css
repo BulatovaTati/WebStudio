@@ -1716,8 +1716,6 @@ body.is-modal-shown, body.is-menu-shown {
 @media screen and (min-width: 1200px) {
   .scroll-to-top {
     position: fixed;
-    bottom: 100px;
-    right: 90px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1738,6 +1736,12 @@ body.is-modal-shown, body.is-menu-shown {
             animation: slide-top 1s linear 2s infinite alternate both;
     -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+@media screen and (min-width: 1200px) and (min-width: 1300px) {
+  .scroll-to-top {
+    bottom: 170px;
+    right: 8%;
   }
 }
 
