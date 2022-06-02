@@ -2166,7 +2166,8 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) {
   .hero--small {
-    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -2181,6 +2182,9 @@ body.is-modal-shown, body.is-menu-shown {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -2190,4 +2194,14 @@ body.is-modal-shown, body.is-menu-shown {
     width: 200px;
     display: inline-block;
   }
+}
+@media screen and (min-width: 768px) {
+  .hero__title--center {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+.form__label--color {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

@@ -61,7 +61,8 @@
     padding-bottom: 60px;
   }
   @media screen and (min-width: 768px) {
-    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 .container--flex {
@@ -71,6 +72,7 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: center;
   }
 }
 .hero__title--center {
@@ -79,4 +81,17 @@
     width: 200px;
     display: inline-block;
   }
+  @media screen and (min-width: 768px) {
+    display: block;
+
+    margin-bottom: 30px;
+  }
 }
+.form__label--color {
+  color: $accent-secondary-text-color;
+}
+// .form--center {
+//   @media screen and (min-width: 768px) {
+//     justify-content: center;
+//   }
+// }
