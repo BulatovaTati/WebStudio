@@ -1979,31 +1979,13 @@ body.is-modal-shown, body.is-menu-shown {
   color: #212121;
 }
 
-@media screen and (max-width: 767.98px) {
-  .card-set {
-    margin-bottom: -30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .card-set {
-    margin-right: -30px;
-    margin-bottom: -30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .card-set {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -2047,7 +2029,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -2064,7 +2046,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 1200px) {
   .card-set__item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
   }

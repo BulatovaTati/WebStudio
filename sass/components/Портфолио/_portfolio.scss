@@ -5,22 +5,9 @@
 }
 
 .card-set {
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: -30px;
-  }
-
   @media screen and (min-width: $tablet) {
-    margin-right: -30px;
-    margin-bottom: -30px;
     display: flex;
     flex-wrap: wrap;
-  }
-
-  @media screen and (min-width: $desktop) {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 
@@ -65,7 +52,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
 
@@ -83,7 +70,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: calc((100% - 6 * 15px) / 3);
+    width: calc((100% - 60px) / 3);
     margin-right: 30px;
     margin-bottom: 30px;
 
