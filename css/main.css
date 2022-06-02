@@ -2204,4 +2204,8 @@ body.is-modal-shown, body.is-menu-shown {
 
 .form__label--color {
   color: #ffffff;
+}
+
+.icon__uncheck {
+  border: 2px solid #ffffff;
 }/*# sourceMappingURL=main.css.map */

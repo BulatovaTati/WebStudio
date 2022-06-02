@@ -90,8 +90,6 @@
 .form__label--color {
   color: $accent-secondary-text-color;
 }
-// .form--center {
-//   @media screen and (min-width: 768px) {
-//     justify-content: center;
-//   }
-// }
+.icon__uncheck {
+  border: 2px solid $accent-secondary-text-color;
+}
