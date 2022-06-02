@@ -51,11 +51,16 @@
     width: 90%;
     left: 49%;
     padding: 40px;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 
   @media screen and (min-width: $mobile) {
     @media screen and (max-width: 1199.98px) {
-      @include modal-mobile;
+      width: 450px;
+      max-height: 100vh;
+      padding: 40px;
+      overflow-y: auto;
     }
   }
 

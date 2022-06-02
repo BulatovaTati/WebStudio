@@ -831,14 +831,16 @@ body.is-modal-shown, body.is-menu-shown {
     width: 90%;
     left: 49%;
     padding: 40px;
+    max-height: 100vh;
+    overflow-y: auto;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal {
     width: 450px;
-    height: 609px;
+    max-height: 100vh;
     padding: 40px;
-    text-align: center;
+    overflow-y: auto;
   }
 }
 @media screen and (min-width: 1200px) {
