@@ -2166,8 +2166,8 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) {
   .hero--small {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     height: auto;
   }
 }
