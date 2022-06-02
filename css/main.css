@@ -2166,8 +2166,8 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) {
   .hero--small {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     height: auto;
   }
 }
@@ -2209,4 +2209,26 @@ body.is-modal-shown, body.is-menu-shown {
 
 .icon__uncheck {
   border: 2px solid #ffffff;
+}
+
+.footer-socials__title--center {
+  text-align: center;
+}
+
+.footer--small {
+  padding-top: 32px;
+  padding-bottom: 33px;
+}
+
+.footer-socials__item--big:not(:last-child) {
+  margin-right: 50px;
+}
+@media screen and (max-width: 479.98px) {
+  .footer-socials__item--big:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.footer-socials--esc {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
