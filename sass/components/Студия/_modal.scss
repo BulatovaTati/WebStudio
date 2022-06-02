@@ -20,8 +20,8 @@
   background-color: $accent-secondary-text-color;
 
   @media screen and (max-width: 479.98px) {
-    width: 90%;
-    left: 49%;
+    width: 90vw;
+    left: 50vw;
     padding: 40px;
     max-height: 100vh;
     overflow-y: auto;
@@ -29,6 +29,7 @@
 
   @media screen and (min-width: $mobile) {
     @media screen and (max-width: 1199.98px) {
+      left: 50vw;
       width: 450px;
       max-height: 100vh;
       padding: 40px;

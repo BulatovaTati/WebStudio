@@ -828,8 +828,8 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (max-width: 479.98px) {
   .modal {
-    width: 90%;
-    left: 49%;
+    width: 90vw;
+    left: 50vw;
     padding: 40px;
     max-height: 100vh;
     overflow-y: auto;
@@ -837,6 +837,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 480px) and (max-width: 1199.98px) {
   .modal {
+    left: 50vw;
     width: 450px;
     max-height: 100vh;
     padding: 40px;
