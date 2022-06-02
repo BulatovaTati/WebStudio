@@ -1,21 +1,14 @@
 .features__list {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: -30px;
-  }
-
   @media screen and(min-width: $tablet) {
     @media screen and(max-width: 1199.98px) {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -30px;
-      margin-bottom: -30px;
     }
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
-    margin-right: -30px;
   }
 }
 
@@ -28,7 +21,7 @@
 
   @media screen and(min-width: $tablet) {
     @media screen and(max-width: 1199.98px) {
-      width: calc((100% - 60px) / 2);
+      width: calc((100% - 30px) / 2);
       margin-right: 30px;
       margin-bottom: 30px;
     }

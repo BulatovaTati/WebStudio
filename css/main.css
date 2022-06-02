@@ -1140,11 +1140,6 @@ body.is-modal-shown, body.is-menu-shown {
   outline: none;
 }
 
-@media screen and (min-width: 480px) {
-  .features__list {
-    margin-bottom: -30px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features__list {
     display: -webkit-box;
@@ -1152,8 +1147,6 @@ body.is-modal-shown, body.is-menu-shown {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1163,7 +1156,6 @@ body.is-modal-shown, body.is-menu-shown {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-right: -30px;
   }
 }
 
@@ -1174,7 +1166,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .features__item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
     margin-right: 30px;
     margin-bottom: 30px;
   }
@@ -1470,17 +1462,8 @@ body.is-modal-shown, body.is-menu-shown {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .clients__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
