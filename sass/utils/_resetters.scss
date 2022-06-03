@@ -1,8 +1,7 @@
 body {
   font-family: $primary-font-fam;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 1.14);
   letter-spacing: 0.03em;
 
   background: $accent-secondary-text-color;

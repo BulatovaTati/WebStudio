@@ -29,18 +29,15 @@
 
 .card-set__title {
   margin-bottom: 4px;
-
   font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(18px, 2);
   letter-spacing: 0.06em;
 
   color: $primary-text-color;
 }
 
 .card-set__text {
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(16px, 1.87);
   color: $secondary-text-color;
 }
 
@@ -124,8 +121,9 @@
     width: 100%;
   }
 }
+
 .card-set__overlay {
-  @include centering-left-0;
+  @include centering(absolute, 0, 0);
   width: 100%;
   height: 100%;
 
@@ -148,9 +146,7 @@
 .card-set__description {
   margin: 0;
   padding: 63px 24px;
-
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(18px, 1.56);
 
   color: $accent-secondary-text-color;
   background-color: $overlay-portfolio-bcg;

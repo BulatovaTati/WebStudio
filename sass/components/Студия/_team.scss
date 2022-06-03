@@ -6,13 +6,11 @@
 
     @media screen and (max-width: 1199.98px) {
       margin-bottom: 30px;
-      font-size: 28px;
-      line-height: 1.18;
+      @include font(28px, 1.18);
     }
 
     @media screen and (min-width: $desktop) {
-      font-size: 36px;
-      line-height: 1.16;
+      @include font(36px, 1.16);
       margin-bottom: 50px;
     }
 
@@ -60,6 +58,7 @@
       &:nth-child(2n) {
         margin-right: 0;
       }
+
       &:nth-last-child(-n + 2) {
         margin-bottom: 0;
       }
@@ -88,12 +87,12 @@
 .team__name {
   margin-bottom: 10px;
   font-weight: 500;
-  font-size: 16px;
+  @include font(16px, null);
   color: $primary-text-color;
 }
 
 .team__position {
-  font-size: 16px;
+  @include font(16px, null);
   margin-bottom: 16px;
 }
 

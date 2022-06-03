@@ -1,5 +1,5 @@
 .backdrop {
-  @include backdrop;
+  @extend %backdrop;
 
   background-color: $modal-bcg;
 
@@ -14,7 +14,7 @@
 }
 
 .modal {
-  @include centering-xy;
+  @include centering(absolute, 50%, 50%);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms $timing-function;
   background-color: $accent-secondary-text-color;
@@ -37,9 +37,7 @@
     }
   }
 
-  @media screen and (min-width: $desktop) {
-    @include modal-desktop;
-  }
+  @extend %modal-desktop;
 }
 
 .modal__button--close {
@@ -63,7 +61,7 @@
 
   &:hover,
   &:focus {
-    @include shadow-box;
+    @extend %shadow-box;
     fill: $accent-text-color;
     border-color: $accent-text-color;
     outline: 0;
@@ -79,8 +77,7 @@
   margin: 0;
   margin-bottom: 12px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 1.15);
   text-align: center;
 
   color: $primary-text-color;
@@ -94,8 +91,7 @@
 }
 
 .form__label {
-  font-size: 12px;
-  line-height: 1.66;
+  @include font(12px, 1.66);
   letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
@@ -215,7 +211,7 @@
 }
 
 .form-checkbox__icon--check {
-  @include centering-left-0;
+  @include centering(absolute, 0, 0);
 
   opacity: 0;
   border-radius: 4px;
@@ -229,7 +225,7 @@
 }
 
 .form-checkbox__icon--uncheck {
-  @include centering-left-0;
+  @include centering(absolute, 0, 0);
 
   display: block;
 
@@ -259,8 +255,7 @@
   cursor: pointer;
 
   @media screen and (max-width: 1199.98px) {
-    font-size: 12px;
-    line-height: 1.16;
+    @include font(12px, 1.16);
   }
 
   &__link {
@@ -270,7 +265,7 @@
 
 .form {
   &__button {
-    @include main-button;
+    @extend %main-button;
     padding: 10px 32px;
     transition: filter 250ms $timing-function, background-color 250ms $timing-function;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
