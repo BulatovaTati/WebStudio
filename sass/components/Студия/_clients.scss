@@ -65,7 +65,7 @@
 }
 
 .clients__link {
-  @include flexible;
+  @extend %flexible;
 
   height: 92px;
 

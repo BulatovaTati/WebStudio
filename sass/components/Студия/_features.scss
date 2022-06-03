@@ -45,7 +45,7 @@
 .features__icon--container {
   margin-bottom: 30px;
 
-  @include flexible;
+  @extend %flexible;
 
   background-color: $secondary-bcg-color;
   border-radius: 4px;

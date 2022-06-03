@@ -4,21 +4,13 @@
   }
 
   &--hr {
-    @media screen and (min-width: $tablet) {
-      border-bottom: 1px solid $hr-line-color;
-    }
-
-    @media screen and (min-width: $desktop) {
-      border-bottom: 1px solid $hr-line-color;
-    }
+    border-bottom: 1px solid $hr-line-color;
   }
 }
 
 .navigation {
   @media screen and (max-width: 767.98px) {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexible(flex, space-between, center);
   }
 
   @media screen and (min-width: $tablet) {
@@ -284,7 +276,7 @@ body {
     font-size: inherit;
     line-height: inherit;
 
-    @include flexible;
+    @include flexible(flex, center, center);
 
     padding-top: 32px;
     padding-bottom: 32px;

@@ -37,7 +37,7 @@
   bottom: 0;
 
   @media screen and (min-width: $desktop) {
-    @include flexible;
+    @include flexible(flex, center, center);
   }
 
   margin: 0;

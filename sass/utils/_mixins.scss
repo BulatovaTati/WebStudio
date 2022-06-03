@@ -1,7 +1,13 @@
-@mixin flexible {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// @mixin flexible {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+@mixin flexible($dy, $jc, $ai) {
+  display: $dy;
+  justify-content: $jc;
+  align-items: $ai;
 }
 
 @mixin centering-xy {

@@ -7,14 +7,13 @@
 
 .footer--container {
   @media screen and (min-width: $tablet) {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+
+    @include flexible(flex, space-around, baseline);
   }
 
   @media screen and (min-width: $desktop) {
-    align-items: baseline;
-    display: flex;
+
+    @include flexible(flex, null, baseline);
   }
 }
 
@@ -113,8 +112,8 @@
 
 .footer-socials__list {
   @media screen and (max-width: 767.98px) {
-    display: flex;
-    justify-content: center;
+
+    @include flexible(flex, center, null);
   }
 
   @media screen and (min-width: $tablet) {
@@ -135,7 +134,7 @@
 .footer-socials__link {
   transition: background-color 250ms $timing-function;
 
-  @include flexible;
+  @extend %flexible;
 
   width: 44px;
   height: 44px;
@@ -162,9 +161,7 @@
       bottom: 170px;
       right: 8%;
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include flexible(flex, center, center);
 
       width: 50px;
       height: 50px;
