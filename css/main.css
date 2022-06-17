@@ -359,22 +359,12 @@ body.is-modal-shown, body.is-menu-shown {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) {
-  .nav__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
-@media screen and (max-width: 767.98px) {
-  .nav__list .current {
-    color: #2196f3;
-  }
+.nav__list .current {
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .nav__list .current {
     position: relative;
-    color: #2196f3;
   }
 }
 @media screen and (min-width: 768px) {
@@ -428,12 +418,6 @@ body.is-modal-shown, body.is-menu-shown {
   }
 }
 @media screen and (min-width: 768px) {
-  .nav__link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
   .nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
@@ -1547,10 +1531,8 @@ body.is-modal-shown, body.is-menu-shown {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
-  .footer__address-container {
-    text-align: center;
-  }
+.footer__address-container {
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .footer__address-container {
@@ -1567,16 +1549,7 @@ body.is-modal-shown, body.is-menu-shown {
 
 .address__list {
   margin-top: 20px;
-}
-@media screen and (max-width: 767.98px) {
-  .address__list {
-    margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .address__list {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .address__list {
@@ -1606,15 +1579,12 @@ body.is-modal-shown, body.is-menu-shown {
   color: #ffffff;
 }
 
+.footer-socials {
+  text-align: center;
+}
 @media screen and (max-width: 767.98px) {
   .footer-socials {
-    text-align: center;
     margin-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-socials {
-    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1648,13 +1618,6 @@ body.is-modal-shown, body.is-menu-shown {
     display: flex;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer-socials__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-}
 
 .footer-socials__item:not(:last-child) {
   margin-right: 10px;
@@ -1673,7 +1636,7 @@ body.is-modal-shown, body.is-menu-shown {
   background-color: #2196f3;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 1299.98px) {
   .scroll-to-top {
     display: none;
   }

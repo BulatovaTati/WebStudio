@@ -25,9 +25,8 @@
 }
 
 .footer__address-container {
-  @media screen and (max-width: 1199.98px) {
-    text-align: center;
-  }
+  text-align: center;
+
 
   @media screen and (min-width: $desktop) {
     margin-right: 70px;
@@ -43,14 +42,7 @@
 
 .address__list {
   margin-top: 20px;
-
-  @media screen and (max-width: 767.98px) {
-    margin-bottom: 60px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
@@ -86,14 +78,12 @@
 
 // ...................................................footer-socials
 .footer-socials {
+  text-align: center;
+
   @media screen and (max-width: 767.98px) {
-    text-align: center;
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $tablet) {
-    text-align: center;
-  }
 
   @media screen and (min-width: $desktop) {
     margin-right: 93px;
@@ -112,7 +102,6 @@
 
 .footer-socials__list {
   @media screen and (max-width: 767.98px) {
-
     @include flexible(flex, center, null);
   }
 
@@ -120,9 +109,7 @@
     display: flex;
   }
 
-  @media screen and (min-width: $desktop) {
-    display: flex;
-  }
+
 }
 
 .footer-socials__item {
@@ -151,32 +138,32 @@
 
 //.............Скролл
 .scroll-to-top {
-  @media screen and (max-width: 1199.98px) {
+  @media screen and (max-width: 1299.98px) {
     display: none;
   }
 
-  @media screen and (min-width: $desktop) {
-    @media screen and (min-width: 1300px) {
-      position: fixed;
-      bottom: 170px;
-      right: 8%;
+  @media screen and (min-width: $desktop) and (min-width: 1300px) {
 
-      @include flexible(flex, center, center);
+    position: fixed;
+    bottom: 170px;
+    right: 8%;
 
-      width: 50px;
-      height: 50px;
+    @include flexible(flex, center, center);
 
-      background-color: $primary-bcg-color;
-      outline: 2px solid $accent-text-color;
-      border: none;
-      border-radius: 50%;
-      cursor: pointer;
+    width: 50px;
+    height: 50px;
 
-      animation: slide-top 1s linear 2s infinite alternate both;
-      transition: opacity 250ms $timing-function;
-    }
+    background-color: $primary-bcg-color;
+    outline: 2px solid $accent-text-color;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    animation: slide-top 1s linear 2s infinite alternate both;
+    transition: opacity 250ms $timing-function;
   }
 }
+
 
 .js-transparent {
   opacity: 0;
