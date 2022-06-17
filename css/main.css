@@ -427,11 +427,13 @@ body.is-modal-shown, body.is-menu-shown {
   color: #2196f3;
 }
 
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 @media screen and (max-width: 767.98px) {
   .contacts__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -441,9 +443,6 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -452,9 +451,6 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 1200px) {
   .contacts__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
