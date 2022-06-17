@@ -99,11 +99,20 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
-  @include font(26px, 1.62);
-  width: 100%;
-  max-width: 360px;
+
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+
+  }
+
+  @media screen and (min-width: $mobile) {
+    margin: 0 auto 30px;
+    width: 360px;
+    @include font(26px, 1.62);
+  }
 
   @media screen and (min-width: $desktop) {
+    margin: 0 auto 30px;
     width: 696px;
 
     font-weight: 900;
