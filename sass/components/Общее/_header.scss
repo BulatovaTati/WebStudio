@@ -95,8 +95,6 @@
     flex-direction: column;
     justify-content: space-between;
 
-    visibility: hidden;
-    inter-events: none;
     transform: translateX(-100%);
     transition: transform 250ms $timing-function;
 
@@ -260,14 +258,13 @@ body {
     outline: none;
   }
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
     font-size: 12px;
     line-height: 1.16;
 
-    @media screen and (max-width: 1198.98px) {
-      padding-top: 21px;
-      padding-bottom: 21px;
-    }
+    padding-top: 21px;
+    padding-bottom: 21px;
+
   }
 
   @media screen and (min-width: $desktop) {
