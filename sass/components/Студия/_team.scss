@@ -2,19 +2,16 @@
   background-color: $secondary-bcg-color;
 
   &__title {
-    font-weight: 700;
+    margin-bottom: 30px;
 
-    @media screen and (max-width: 1199.98px) {
-      margin-bottom: 30px;
-      @include font(28px, 1.18);
-    }
+    @include font(28px, 1.18);
+    font-weight: 700;
+    color: $primary-text-color;
 
     @media screen and (min-width: $desktop) {
       @include font(36px, 1.16);
       margin-bottom: 50px;
     }
-
-    color: $primary-text-color;
   }
 }
 
@@ -23,13 +20,12 @@
     margin-bottom: -30px;
   }
 
-  @media screen and (min-width: $tablet) {
-    @media screen and (max-width: 1199.98px) {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -30px;
-      margin-bottom: -30px;
-    }
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -49,20 +45,20 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
-    @media screen and (max-width: 1199.98px) {
-      width: calc((100% - 60px) / 2);
-      margin-right: 30px;
-      margin-bottom: 30px;
+  @media screen and (min-width: $tablet) and (max-width: 1199.98px) {
 
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
+    width: calc((100% - 60px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
-      &:nth-last-child(-n + 2) {
-        margin-bottom: 0;
-      }
+    &:nth-child(2n) {
+      margin-right: 0;
     }
+
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+
   }
 
   @media screen and (min-width: $desktop) {
@@ -74,10 +70,8 @@
 
 .team__container {
   padding-top: 30px;
+  padding-bottom: 24px;
 
-  @media screen and (max-width: 1199.98px) {
-    padding-bottom: 24px;
-  }
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 30px;
@@ -86,6 +80,7 @@
 
 .team__name {
   margin-bottom: 10px;
+
   font-weight: 500;
   @include font(16px, null);
   color: $primary-text-color;
