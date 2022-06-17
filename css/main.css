@@ -745,17 +745,13 @@ body.is-modal-shown, body.is-menu-shown {
   text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: 0 auto 30px;
+  width: 360px;
+  font-size: 26px;
+  line-height: 1.62;
 }
 @media screen and (max-width: 479.98px) {
   .hero__title {
     width: 100%;
-  }
-}
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 360px;
-    font-size: 26px;
-    line-height: 1.62;
   }
 }
 @media screen and (min-width: 1200px) {
