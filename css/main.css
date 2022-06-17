@@ -293,8 +293,11 @@ a:focus {
           transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
-  overflow: scroll;
-  margin-bottom: 32px;
+}
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .nav__menu--button.is-open ~ .menu__container {
+    overflow: scroll;
+  }
 }
 
 @media screen and (max-width: 767.98px) {
@@ -351,6 +354,11 @@ body.is-modal-shown, body.is-menu-shown {
   overflow: hidden;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767.98px) {
+  .nav__list {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__list {
     display: -webkit-box;

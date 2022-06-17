@@ -70,8 +70,10 @@
   transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
-  overflow: scroll;
-  margin-bottom: 32px;
+
+  @media screen and (min-width: $mobile) and (max-width: 767.98px) {
+    overflow: scroll;
+  }
 }
 
 .menu__container {
@@ -121,10 +123,13 @@ body {
 }
 
 .nav__list {
+  @media screen and (min-width: $mobile) and (max-width: 767.98px) {
+    margin-bottom: 32px;
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
   }
-
 
   .current {
     color: $accent-text-color;
