@@ -12,7 +12,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-
+    margin-right: auto;
     @include flexible(flex, null, baseline);
   }
 }
