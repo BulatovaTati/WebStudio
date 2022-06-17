@@ -753,7 +753,6 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 480px) {
   .hero__title {
-    margin: 0 auto 30px;
     width: 360px;
     font-size: 26px;
     line-height: 1.62;
@@ -761,7 +760,6 @@ body.is-modal-shown, body.is-menu-shown {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    margin: 0 auto 30px;
     width: 696px;
     font-weight: 900;
     font-size: 44px;
