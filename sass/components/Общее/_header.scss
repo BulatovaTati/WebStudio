@@ -70,6 +70,8 @@
   transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
+  overflow: scroll;
+  margin-bottom: 32px;
 }
 
 .menu__container {
