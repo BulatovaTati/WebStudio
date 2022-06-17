@@ -636,11 +636,9 @@ body.is-modal-shown, body.is-menu-shown {
   }
 }
 
-@media screen and (max-width: 1199.98px) {
-  .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-width: 1200px) {
   .hero {
