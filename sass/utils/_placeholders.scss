@@ -50,10 +50,11 @@
     @media screen and (min-width: $desktop) {
         width: 528px;
         height: 581px;
+        left: 0;
         padding-top: 40px;
         padding-bottom: 29px;
-        padding-left: 44px;
-        padding-right: 36px;
+        padding-left: 40px;
+        padding-right: 40px;
         text-align: center;
     }
 }
