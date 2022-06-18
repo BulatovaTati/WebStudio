@@ -296,7 +296,7 @@ a:focus {
 }
 @media screen and (min-width: 400px) and (max-width: 767.98px) {
   .nav__menu--button.is-open ~ .menu__container {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
 
