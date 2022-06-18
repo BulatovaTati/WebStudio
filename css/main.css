@@ -2010,13 +2010,7 @@ body.is-modal-shown, body.is-menu-shown {
   .card-set__description {
     height: 100%;
     width: 100%;
-  }
-}
-@media screen and (max-width: 399.98px) {
-  .card-set__description {
-    padding: 24px;
-    font-size: 14px;
-    line-height: 1.56;
+    overflow-y: scroll;
   }
 }
 
