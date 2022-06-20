@@ -1,11 +1,11 @@
 .backdrop {
   @extend %backdrop;
 
-  background-color: $modal-bcg;
+
 
   &.is-hidden {
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;
 
     & .modal {
       transform: translate(-50%, -50%) scale(0.9);
@@ -21,7 +21,7 @@
   transition: transform 250ms $timing-function;
   background-color: $accent-secondary-text-color;
   overflow-y: auto;
-  left: 50vw;
+
 
   @media screen and (max-width: 479.98px) {
     width: 90vw;
