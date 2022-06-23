@@ -1222,6 +1222,18 @@ body.is-modal-shown, body.is-menu-shown {
   display: flex;
 }
 
+.work-list__item {
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.work-list__item:hover, .work-list__item:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .work-list__img-description {
   position: absolute;
   left: 0;

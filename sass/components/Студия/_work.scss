@@ -30,6 +30,18 @@
   display: flex;
 }
 
+.work-list__item {
+
+  cursor: pointer;
+  transition: transform .5s;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+
+  }
+}
+
 .work-list__img-description {
   position: absolute;
   left: 0;
