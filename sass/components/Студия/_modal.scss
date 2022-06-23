@@ -21,11 +21,12 @@
   transition: transform 250ms $timing-function;
   background-color: $accent-secondary-text-color;
   overflow-y: auto;
+  border-radius: 15px;
 
 
   @media screen and (max-width: 479.98px) {
     width: 90vw;
-    padding: 40px;
+    padding: 30px;
     max-height: 100vh;
 
   }
@@ -262,11 +263,19 @@
 
 .form {
   &__button {
+    @media screen and (max-width: 319.98px) {
+      width: 150px;
+      padding: 10px 25px;
+    }
+
     @extend %main-button;
+    width: 200px;
     padding: 10px 32px;
-    transition: filter 250ms $timing-function, background-color 250ms $timing-function;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: filter 250ms $timing-function,
+    background-color 250ms $timing-function;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 
     &:hover,
     &:focus {
@@ -275,5 +284,6 @@
       background-color: rgb(21, 142, 242);
       outline: none;
     }
+
   }
 }

@@ -24,7 +24,6 @@
 }
 
 .subscribe__button, .form__button, .hero .button {
-  min-width: 200px;
   border-radius: 4px;
   border: none;
   font-weight: 700;
@@ -744,6 +743,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 
 .hero .button {
+  min-width: 200px;
   padding: 10px 32px;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -757,9 +757,11 @@ body.is-modal-shown, body.is-menu-shown {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.hero__button {
-  -webkit-animation: swing 7s ease-in infinite forwards;
-          animation: swing 7s ease-in infinite forwards;
+@media screen and (min-width: 1200px) {
+  .hero__button {
+    -webkit-animation: swing 7s ease-in infinite forwards;
+            animation: swing 7s ease-in infinite forwards;
+  }
 }
 
 @-webkit-keyframes swing {
@@ -828,11 +830,12 @@ body.is-modal-shown, body.is-menu-shown {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   overflow-y: auto;
+  border-radius: 15px;
 }
 @media screen and (max-width: 479.98px) {
   .modal {
     width: 90vw;
-    padding: 40px;
+    padding: 30px;
     max-height: 100vh;
   }
 }
@@ -1086,6 +1089,7 @@ body.is-modal-shown, body.is-menu-shown {
 }
 
 .form__button {
+  width: 200px;
   padding: 10px 32px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1093,6 +1097,12 @@ body.is-modal-shown, body.is-menu-shown {
   transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 319.98px) {
+  .form__button {
+    width: 150px;
+    padding: 10px 25px;
+  }
 }
 .form__button:hover, .form__button:focus {
   -webkit-filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
@@ -1742,6 +1752,7 @@ body.is-modal-shown, body.is-menu-shown {
 
 .subscribe__button {
   position: relative;
+  width: 200px;
   padding: 10px 28px;
   padding-left: 29px;
   text-align: left;

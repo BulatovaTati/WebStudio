@@ -78,6 +78,7 @@
 .subscribe__button {
   position: relative;
   @extend %main-button;
+  width: 200px;
   padding: 10px 28px;
   padding-left: 29px;
 
